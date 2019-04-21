@@ -24,6 +24,7 @@ class Updateuser extends Migration
         });
         Schema::table('users', function (Blueprint $table) {
             $table->foreign('avatar_id')->references('id')->on('avatars');
+            $table->unique('column');
         });
     }
 
