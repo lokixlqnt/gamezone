@@ -1,0 +1,137 @@
+.container_ticket {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box_ticket {
+    background-color: #881F6A;
+    margin: 4em 2%;
+    max-width: 400px;
+    width: 100%;
+    height: 430px;
+}
+
+.box_background {
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+    margin-bottom: 2em;
+    width: 90%;
+    height: 420px;
+}
+
+.box_title {
+    margin-top: -2em;
+    white-space: pre-line;
+    color: white;
+    font-size: 2em;
+    font-weight: 800;
+    padding: 0.8em 0 0 1em;
+}
+
+.box_ticket_gd {
+    background-color: #881F6A;
+    margin: 4em 2%;
+    max-width: 880px;
+    width: 100%;
+    height: 430px;
+}
+
+.box_background_gd {
+    display: block;
+    margin: 0 auto;
+    background-color: white;
+    margin-bottom: 2em;
+    width: 95%;
+    height: 420px;
+}
+
+.box_title_gd {
+    background: url(../img/ticket/ticket_calcul.png);
+    background-size: cover;
+    height: 118px;
+    margin-top: -2em;
+    white-space: pre-line;
+    color: white;
+    font-size: 2em;
+    font-weight: 800;
+    padding: 0.8em 0 0 1em;
+}
+
+.baby {
+    background: url(../img/ticket/ticket_baby.png);
+    background-size: cover;
+    height: 118px;
+}
+
+.child {
+    background: url(../img/ticket/ticket_child.png);
+    background-size: cover;
+    height: 118px;
+}
+
+.teen {
+    background: url(../img/ticket/ticket_teen.png);
+    background-size: cover;
+    height: 118px;
+}
+
+.adult {
+    background: url(../img/ticket/ticket_adult.png);
+    background-size: cover;
+    height: 118px;
+}
+
+.position {
+    display: block;
+    margin: -3.5em auto 0 auto;
+}
+
+.price {
+    margin: 25% 0 0 0;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 800;
+}
+
+.description {
+    text-align: center;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+span.tiny {
+    font-size: 0.7em;
+}
+
+.calcul {
+    background-color: var(--color-primary);
+    border: none;
+    color: var(--color-yellow);
+    height: 35px;
+    width: 35px;
+    font-weight: 600;
+    font-size: 1em;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-radius: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.result {
+    padding: 1em;
+    white-space: pre-line;
+}
+
+table {
+    padding: 1em 0;
+}
+
+tr, th {
+    padding: 1em 0;
+}
+
+td {
+    padding-left: 1em;
+}

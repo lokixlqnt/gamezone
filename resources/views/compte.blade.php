@@ -2,9 +2,13 @@
 
 @section('title', 'Compte')
 
-@include('layouts.nav')
+@push('styles')
+  <link rel="stylesheet" href="{{ url ('css/compte.css')}}">
+@endpush
 
 @section('content')
+@include('layouts.nav')
+<main>
   <div class="zonebleu">
     <h1>MON AVATAR</h1>
     <div class="rondavatar">
@@ -37,4 +41,5 @@
       <input type="submit" name="submit" class="submit" value="Valider" />
     </form>
   </div>
+</main>  
 @endsection
