@@ -1,19 +1,14 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
 .zonebleu {
   background: #1C1F3D;
   text-align: center;
   font-family: 'Josefin Sans';
   color : white;
-  padding: 1%;
-  margin-top: 13%;
+  padding: 2%;
+  margin-top: 7em;
 }
 
 .imgavatar {
-  height: 96px;
+  height: 80px;
   width: auto;
 }
 
@@ -25,16 +20,23 @@ body {
 .rond {
   background: white;
   border-radius: 50%;
+  height: 140px;
+  width: 140px;
   margin-left: 5%;
   padding: 3%;
   display: inline-flex;
   justify-content: space-around;
+  border: solid white 5px;
 }
 
 .rond:hover {
   border: solid #F6CD40 5px;
 }
 
+.active {
+  border: solid #F6CD40 5px;
+  background-color:#F6CD40 ;
+}
 
 .divform {
   margin-left: 10%;

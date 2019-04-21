@@ -11,7 +11,8 @@
       <div class="rond">
         <a href="#"><img class="imgavatar" src="{{ url('img/avatar_snake.png') }}" /></a>
       </div>
-      <div class="rond">
+      <!-- Mettre active si sélectionné (avatar user) -->
+      <div class="rond active">
         <a href="#"><img class="imgavatar" src="{{ url('img/avatar-aigle.png') }}" /></a>
       </div>
       <div class="rond">

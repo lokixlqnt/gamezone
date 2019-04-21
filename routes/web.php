@@ -23,6 +23,6 @@ Route::get('/cgv', function () {
     return view('cgv');
 });
 
-Route::get('/mentionslegales', function () {
+Route::get('/mentions', function () {
     return view('mentionslegales');
 });
