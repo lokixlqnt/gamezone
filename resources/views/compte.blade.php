@@ -2,9 +2,7 @@
 
 @section('title', 'Compte')
 
-<header>
 @include('layouts.nav')
-</header>
 
 @section('content')
   <div class="zonebleu">

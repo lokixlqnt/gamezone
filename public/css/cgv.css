@@ -1,0 +1,46 @@
+.imgcgv {
+  margin-top: 8%;
+  background: grey;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+}
+
+.titrecgv {
+  background: rgba(246, 205, 64, 0.85);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.h2cgv {
+  color: #881F6A;
+}
+
+.cgu {
+  color: #881F6A;
+  font-size: 30px;
+  margin: 0;
+}
+
+.soustitre {
+  color: #881F6A;
+  font-size: 20px;
+  margin: 0;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.divcgvglobal {
+  margin: 5% 15% 5% 15%;
+}
+
+.articlescgv {
+  font-weight: 300;
+  margin-bottom: 7%;
+}
+
+.degrade {
+  background-image:linear-gradient(white, #e7e7e7);
+  padding-bottom: 3%;
+}
