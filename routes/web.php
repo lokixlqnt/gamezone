@@ -27,5 +27,5 @@ Route::get('/mentions', function () {
     return view('mentionslegales');
 });
 
-Route::get('events','EventController@index')->name('events.index');
-Route::post('events', 'EventController@addEvent')->name('events.add');
+Route::get('/events','EventController@index')->name('events.index');
+Route::post('/events', 'EventController@addEvent')->name('events.add');

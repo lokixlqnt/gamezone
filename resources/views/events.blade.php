@@ -1,11 +1,20 @@
 @extends('layouts.app')
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/fullcalendar.min.css"/>
 
+
+<!-- Scripts -->
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/fullcalendar.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/locale/fr.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/3.10.0/locale/es.js"></script>
+
+
+{!! $calendar_details->script() !!}
 @section('content')
         <div class="container">
 
             <div class="panel panel-primary">
-
-             <div class="panel-heading">Event Calendar in Laravel 5 Using Laravel-fullcalendar</div>
 
               <div class="panel-body">
 
@@ -61,7 +70,6 @@
             </div>
 
             <div class="panel panel-primary">
-              <div class="panel-heading">MY Event Details</div>
               <div class="panel-body" >
                   {!! $calendar_details->calendar() !!}
               </div>

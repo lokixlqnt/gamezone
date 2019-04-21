@@ -25,6 +25,10 @@ class EventController extends Controller
             );
     	}
     	$calendar_details = Calendar::addEvents($event_list);
+      $calendar_details = Calendar::setOptions([
+        'firstDay' => 1,
+        'locale' => 'fr',
+      ]);
 
         return view('events', compact('calendar_details') );
     }
