@@ -30,3 +30,8 @@ Route::get('/mentions', function () {
 Route::get('/ticket', function () {
     return view('ticket');
 });
+Auth::routes();
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
