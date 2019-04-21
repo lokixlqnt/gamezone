@@ -14,3 +14,15 @@
 Route::get('/', function () {
     return view('home');
 });
+
+Route::get('/compte', function () {
+    return view('compte');
+});
+
+Route::get('/cgv', function () {
+    return view('cgv');
+});
+
+Route::get('/mentionslegales', function () {
+    return view('mentionslegales');
+});

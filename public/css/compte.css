@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.zonebleu {
+  background: #1C1F3D;
+  text-align: center;
+  font-family: 'Josefin Sans';
+  color : white;
+  padding: 1%;
+  margin-top: 13%;
+}
+
+.imgavatar {
+  height: 96px;
+  width: auto;
+}
+
+.rondavatar {
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.rond {
+  background: white;
+  border-radius: 50%;
+  margin-left: 5%;
+  padding: 3%;
+  display: inline-flex;
+  justify-content: space-around;
+}
+
+.rond:hover {
+  border: solid #F6CD40 5px;
+}
+
+
+.divform {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.formtitre {
+	font-size: 15px;
+	margin-bottom: 10px;
+  text-align: center;
+  font-family: 'Josefin Sans';
+  font-size: 2em;
+}
+
+label {
+  display: flex;
+  justify-content: center;
+  font-family: 'Josefin Sans';
+  font-size: 20px;
+}
+
+input {
+  padding: 10px 0px 10px 0px;
+	border: 1px solid black;
+	border-radius: 20px;
+	margin-bottom: 10px;
+	width: 100%;
+  font-family: 'Josefin Sans';
+  text-align: center;
+	font-size: 25px;
+  color: #881F6A;
+}
+.submit {
+  width: 100px;
+	background: #881F6A;
+	color: white;
+	border: 0 none;
+	border-radius: 5px;
+	padding: 10px 5px;
+	margin: 10px 5px;
+  display: flex;
+  justify-content: center;
+}
