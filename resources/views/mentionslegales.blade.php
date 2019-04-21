@@ -2,11 +2,13 @@
 
 @section('title', 'Mentions légales')
 
-
-@include('layouts.nav')
-
+@push('styles')
+  <link rel="stylesheet" href="{{ url ('css/cgv.css')}}">
+@endpush
 
 @section('content')
+@include('layouts.nav')
+<main>
  <div class="degrade">
   <div class="imgcgv">
     <div class="titrecgv">
@@ -108,4 +110,5 @@
     </div>
   </div>
   </div>
+</main>  
 @endsection

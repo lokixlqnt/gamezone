@@ -2,10 +2,9 @@
 
 @section('title', 'Home')
 
+@section('content')
 <header>
 @include('layouts.nav')
 </header>
-
-@section('content')
 
 @endsection

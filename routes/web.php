@@ -26,3 +26,7 @@ Route::get('/cgv', function () {
 Route::get('/mentions', function () {
     return view('mentionslegales');
 });
+
+Route::get('/ticket', function () {
+    return view('ticket');
+});
