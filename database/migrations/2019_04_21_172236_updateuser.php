@@ -19,6 +19,7 @@ class Updateuser extends Migration
             $table->string('nickname', 100);
             $table->string('city', 100)->nullable();
             $table->bigInteger('avatar_id')->unsigned();
+            $table->bigInteger('experience')->nullable()->default('0');
             // $table->foreign('avatar_id')->references('id')->on('avatars');
         });
         Schema::table('users', function (Blueprint $table) {
@@ -41,6 +42,7 @@ class Updateuser extends Migration
             $table->dropColumn('city');
             $table->dropColumn('nickname');
             $table->dropColumn('firstname');
+            $table->dropColumn('experience');
         });
 
     }
