@@ -9,14 +9,26 @@
   crossorigin=""></script>
 @section('content')
 
- <div id="mapid" style="height: 50vh;">
+ <div id="map" style="height: 50vh; width: auto;">
    <script type="text/javascript">
-   var map = L.map('map', {
-   crs: L.CRS.Simple
-});
-var bounds = [[0,0], [1000,1000]];
-var image = L.imageOverlay('plan.jpg', bounds).addTo(map);
-map.fitBounds(bounds);
+
+    var map = L.map('map', {
+        maxZoom: 10,
+        minZoom: 0,
+        continuousWorld: false,
+        noWrap: true,
+        zoomControl: false,
+
+        crs: L.CRS.Simple
+    }).setView([0, 0], 0);
+
+    map.setMaxBounds(new L.LatLngBounds([0,0], [0,0]));
+
+    var imageUrl = 'https://i.ibb.co/z2cks9R/00-le-plan-vierge.jpg';
+    var imageBounds = [3508,2580] ;
+
+    L.imageOverlay(imageUrl, imageBounds).addTo(map);
+
    </script>
  </div>
 
