@@ -11,12 +11,20 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Auth:: routes ();
+
+Route::middleware('auth')->group(function () {
+
+
 
 Route::get('/compte', function () {
     return view('compte');
+});
+
+});
+
+Route::get('/', function () {
+    return view('home');
 });
 
 Route::get('/cgv', function () {
@@ -30,3 +38,9 @@ Route::get('/mentions', function () {
 Route::get('/ticket', function () {
     return view('ticket');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+// Route::get('/compte', 'UsersController@index')->name('compte');
