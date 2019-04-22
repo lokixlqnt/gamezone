@@ -39,6 +39,11 @@
       <input type="text" name="ville"/>
       <input type="submit" name="submit" class="submit" value="Valider" />
     </form>
+    <form id="logout-form" action="{{ route('logout') }}" method="POST">
+        @csrf
+    <li><input type="submit" value="Déconnexion"></li>
+
+    </form>
   </div>
 </main>
 @endsection
