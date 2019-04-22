@@ -216,6 +216,10 @@ header {
     padding: 8px 22px;
 }
 
+#button_footer {
+    margin: 0 0;
+}
+
 #button_footer button {
     display: flex;
     margin: 0 auto 1% auto;
@@ -248,17 +252,18 @@ footer {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+    color: white;
     height: 450px;
 }
 
 .left_footer {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
-    width: 50%;
-    font-size: 1.3em;
+    width: 35%;
+    font-size: 1.1em;
     font-weight: 600;
-    word-spacing: 0.1em;
 }
 
 .left_footer ul {
@@ -276,13 +281,31 @@ footer {
     color: var(--color-yellow);
 }
 
-.footer_recrute {
-    margin-left: 15%;
-}    
+ul#middle {
+    margin-left: 2.5em;
+}
+
+.right_footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 25%;
+}
+
+
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .logo {
         display: none;
+    }
+
+    footer {
+        background-image: none;
+    }
+
+    #button_footer {
+        margin: 3% 0;
     }
 }
 
@@ -300,22 +323,12 @@ footer {
     }
 
     footer {
-        display: flex;
-        justify-content: center;
         background-image: none;
-        background-color: var(--color-primary);
-        background-position: center;
-        height: 450px;
     }
-    
-    .left_footer {
-        display: flex;
-        flex-direction: row;
-        width: 50%;
-        font-size: 1.3em;
-        font-weight: 600;
-        word-spacing: 0.1em;
-    }    
+
+    #button_footer {
+        margin: 3% 0;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -358,5 +371,29 @@ footer {
 
     #menu ul {
         top: 50px;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        background-image: none;
+        height: auto;
+    }
+    
+    .left_footer {
+        width: 80%;
+    }
+    
+    ul#middle {
+        margin-left: 0;
+    }
+    
+    .right_footer {
+        width: 80%;
+        padding: 2% 0;
+    }
+    
+    #button_footer {
+        margin: 3% 0;
     }
 }

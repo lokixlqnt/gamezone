@@ -25,16 +25,14 @@
                     <li>Dans la Presse</li>
                 </a>
             </ul>
-            <div class="footer_recrute">
-                <ul>
-                    <a href="#">
-                        <li>On Recrute</li>
-                    </a>
-                    <a href="#">
-                        <li>Nous Contacter</li>
-                    </a>
-                </ul>
-            </div>
+            <ul id="middle">
+                <a href="#">
+                    <li>On Recrute</li>
+                </a>
+                <a href="#">
+                    <li>Nous Contacter</li>
+                </a>
+            </ul>
             <ul>
                 <a href="#">
                     <li>Conditions de vente</li>
@@ -43,6 +41,12 @@
                     <li>Conditions légales</li>
                 </a>
             </ul>
+        </div>
+
+        <div class="right_footer">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil magni asperiores assumenda saepe sint libero
+            qui facilis nam, optio deserunt provident laborum aut, architecto consequatur totam ipsa corrupti deleniti
+            beatae!
         </div>
     </footer>
 </body>
