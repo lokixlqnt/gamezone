@@ -34,10 +34,10 @@
                 </a>
             </ul>
             <ul>
-                <a href="#">
+                <a href="./cgv">
                     <li>Conditions de vente</li>
                 </a>
-                <a href="#">
+                <a href="./mentions">
                     <li>Conditions légales</li>
                 </a>
             </ul>
