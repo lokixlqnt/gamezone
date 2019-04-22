@@ -1,0 +1,510 @@
+main {
+    margin: 0 auto;
+    max-width: 1440px;
+    margin-top: 5em !IMPORTANT;
+}
+
+.bloc_header {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.titre {
+    float: left;
+    background: rgba(239,199,50, 0.8);
+    padding: 0.5em 1.2em;
+    color: var(--color-primary);
+    font-weight: 800;
+    line-height: 1.1em;
+    white-space: pre-line;
+    font-size: 2.6em;
+}
+
+/* .reservation {
+    float:left;
+    background: var(--color-primary);
+    margin-top: 7.8em;
+    padding: 30px 40px;
+    height: 100px;
+    width: 200px;
+    border-radius: 75px 0px 0px 75px;
+}
+
+.reservation a {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.4em;
+    color: white;
+    text-transform: uppercase;
+    white-space: pre-line;
+}
+
+.border_yellow {
+    border-right: 2px solid var(--color-yellow);
+    height: 42px;
+    margin-right: -20px;
+}
+
+.reservation a:hover {
+    color: var(--color-yellow);
+} */
+
+/* Bloc présentation */
+
+#presentation {
+    background: var(--color-primary);
+    width: 100%;
+    height: 450px;
+    margin-bottom: 7%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#presentation .blocg {
+    width: 40%;
+    height: 72%;
+    margin: auto 0;
+    border-right: 3px solid var(--color-yellow);
+}
+
+.blocg img {
+    display: flex;
+    width: 350px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 9%;
+}
+
+#presentation .blocd {
+    width: 60%;
+    height: 86%;
+    margin: auto 0;
+}
+
+.blocd p {
+    color: white;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1.8em;
+    font-weight: 600;
+    word-spacing: 1.2px;
+}
+
+.blocd p .yellow {
+    color: var(--color-yellow);
+    font-style: normal;
+}
+
+.italique {
+    color: white;
+    font-style: italic;
+}
+
+.chiffre {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--color-yellow);
+    margin: 2em;
+    border-radius: 25px;
+    width: 200px;
+    height: 150px;
+}
+
+.number {
+    font-size: 3.5em;
+}
+
+.title {
+    font-size: 1.6em;
+}
+
+/* Slider attractions */
+
+.bar_attractions {
+    width: 100%;
+    display: flex;
+    margin-top: 7%;
+    margin-bottom: 2%;
+    height: 60px;
+    background: var(--color-primary);
+}
+
+.bar_attractions h2 {
+    margin: 0 auto;
+    font-weight: 600;
+    line-height: 70px;
+    font-size: 1.9em;
+    color: white;
+}
+
+section#attractions {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+section#attractions .box1 {
+    float:left;
+    background-image: url(../img/fond_champions.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33.33%;
+}
+
+section#attractions .box2 {
+    float:left;
+    background-image: url(../img/fond_fighter_hard.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33.33%;
+}
+
+section#attractions .box3 {
+    float:left;
+    background-image: url(../img/fond_contagion_vr.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33.33%;
+}
+
+section#attractions .box4 {
+    float:left;
+    background-image: url(../img/fond_fighter_league.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33.33%;
+}
+
+section#attractions .box5 {
+    float:left;
+    background-image: url(../img/fond_game_center.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33.33%;
+}
+
+section#attractions .box6 {
+    float:left;
+    background-image: url(../img/fond_heroes_team.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33.33%;
+}
+
+section#attractions .box7 {
+    float:left;
+    background-image: url(../img/fond_awsome_heroes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33.33%;
+}
+
+section#attractions .box8 {
+    float:left;
+    background-image: url(../img/fond_battle_kart.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33.33%;
+}
+
+section#attractions .box9 {
+    float:left;
+    background-image: url(../img/fond_champions_league.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 33.33%;
+}
+
+section#attractions img {
+    margin: 0 auto;
+    margin-top: 3%;
+    height: auto;
+    width: 60%;
+}
+
+#attractions p {
+    font-size: 1.1em;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    text-align: center;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+    height: 200px;
+    color: white;
+}
+
+.background_img {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px;
+    height: 0;
+}
+
+.background_attractions {
+    display: flex;
+    flex-direction: column;
+    height: 480px;
+}
+
+.background_attractions p {
+    margin-top: 60%;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 10px;
+    background: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.8s ease;
+    -webkit-transition: background-color 0.8s ease;
+    -moz-transition: background-color 0.8s ease;
+    -o-transition: background-color 0.8s ease;
+}
+
+.bloc_dot {
+    float: left;
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    height: 60px;
+    text-align: center;
+    line-height: 65px;
+    background: var(--color-primary);
+}
+
+.active,
+.dot:hover {
+    background-color: var(--color-yellow);
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+#attractions .position {
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 8%;
+}
+
+#attractions a {
+    text-decoration: none;
+}
+
+/* EFFET SADIES */
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figure.effect-sadie img {
+    margin-top: 20%;
+    -webkit-transition: -webkit-transform 0.40s, color 0.35s;
+    transition: transform 0.40s, color 0.35s;
+    -webkit-transform: translate3d(0, 60%, 0);
+    transform: translate3d(0, 60%, 0);
+}
+
+figure.effect-sadie figcaption::before,
+figure.effect-sadie p {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.40s;
+    transition: opacity 0.35s, transform 0.40s;
+}
+
+figure.effect-sadie figcaption::before,
+figure.effect-sadie .background_attractions {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.40s;
+    transition: opacity 0.35s, transform 0.40s;
+
+}
+
+figure.effect-sadie figcaption::before,
+figure.effect-sadie button {
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.40s;
+    transition: opacity 0.35s, transform 0.40s;
+}
+
+figure.effect-sadie p {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 50px, 0);
+    transform: translate3d(0, 50px, 0);
+}
+
+figure.effect-sadie .background_attractions {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+figure.effect-sadie button {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 20px, 0);
+    transform: translate3d(0, 20px, 0);
+}
+
+figure.effect-sadie:hover img {
+    -webkit-transform: translate3d(0, 60%, 0) translate3d(0, -40px, 0);
+    transform: translate3d(0, 60%, 0) translate3d(0, -40px, 0);
+}
+
+figure.effect-sadie:hover figcaption::before,
+figure.effect-sadie:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+figure.effect-sadie:hover figcaption::before,
+figure.effect-sadie:hover .background_attractions {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    /* background: linear-gradient(180deg, rgba(28, 31, 61, 0) 0%, rgba(28, 31, 61, 0.5) 0.01%, rgba(28, 31, 61, 0.820923) 36.46%, #1C1F3D 77.08%); */
+    background: linear-gradient(180deg, rgba(28, 31, 61, 0) 0%, rgba(28, 31, 61, 0.5) 36.98%, rgba(28, 31, 61, 0.820923) 55.73%, #1C1F3D 77.08%);
+}
+
+figure.effect-sadie:hover figcaption::before,
+figure.effect-sadie:hover button {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    #presentation .blocg {
+        width: 5%;
+    }
+    
+    #presentation .blocd {
+        width: 100%;
+    }
+
+    .blocg img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .bloc_header {
+        position: absolute;
+        bottom: 0;
+    }
+    .titre {
+        float: left;
+        background: rgba(239,199,50, 0.8);
+        padding: 0.5em 1.2em;
+        border-radius: 0px 0px 0px 0px;
+        width: 100%;
+        font-size: 2em;
+    }
+
+    #presentation .blocg {
+        width: 5%;
+    }
+    
+    #presentation .blocd {
+        width: 100%;
+        height: auto;
+    }
+
+    .blocg img {
+        display: none;
+    }
+
+    .blocd p {
+        font-size: 1.2em;
+    }
+
+    .bar_attractions h2 {
+        font-size: 1em;
+    }
+
+    section#attractions .box1 {
+        float:none;
+        width: 100%;
+    }
+    
+    section#attractions .box2 {
+        float:none;
+        width: 100%;
+    }
+    
+    section#attractions .box3 {
+        float:none;
+        width: 100%;
+    }
+    
+    section#attractions .box4 {
+        float:none;
+        width: 100%;
+    }
+    
+    section#attractions .box5 {
+        float:none;
+        width: 100%;
+    }
+    
+    section#attractions .box6 {
+        float:none;
+        width: 100%;
+    }
+    
+    section#attractions .box7 {
+        float:none;
+        width: 100%;
+    }
+    
+    section#attractions .box8 {
+        float:none;
+        width: 100%;
+    }
+    
+    section#attractions .box9 {
+        float:none;
+        width: 100%;
+    }
+}

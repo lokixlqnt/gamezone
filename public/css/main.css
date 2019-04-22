@@ -216,6 +216,70 @@ header {
     padding: 8px 22px;
 }
 
+#button_footer button {
+    display: flex;
+    margin: 0 auto 1% auto;
+    border: none;
+    white-space: pre-line;
+    border-radius: 75px;
+    color: var(--color-primary);
+    padding: 18px 38px;
+    text-transform: uppercase;
+    background: var(--color-yellow);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    height: 70px;
+    width: 150px;
+    font-weight: 600;
+}
+
+#button_footer button:hover {
+    color: white;
+}
+
+#button_footer a {
+    text-decoration: none;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    background-image: url("../img/footer.png");
+    background-color: var(--color-primary);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    height: 450px;
+}
+
+.left_footer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 50%;
+    font-size: 1.3em;
+    font-weight: 600;
+    word-spacing: 0.1em;
+}
+
+.left_footer ul {
+    list-style: none;
+    border-left: 2px solid white;
+    line-height: 1.7em;
+}
+
+.left_footer a {
+    text-decoration: none;
+    color: white;
+}
+
+.left_footer a:hover {
+    color: var(--color-yellow);
+}
+
+.footer_recrute {
+    margin-left: 15%;
+}    
+
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .logo {
         display: none;
@@ -234,6 +298,24 @@ header {
     .avatar {
         margin-right: 1%;
     }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        background-image: none;
+        background-color: var(--color-primary);
+        background-position: center;
+        height: 450px;
+    }
+    
+    .left_footer {
+        display: flex;
+        flex-direction: row;
+        width: 50%;
+        font-size: 1.3em;
+        font-weight: 600;
+        word-spacing: 0.1em;
+    }    
 }
 
 @media screen and (max-width: 767px) {
