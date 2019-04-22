@@ -15,9 +15,7 @@ Route::get('/', function () {
     return view('home');
 });
 
-Route::get('/compte', function () {
-    return view('compte');
-});
+
 
 Route::get('/cgv', function () {
     return view('cgv');
@@ -32,6 +30,14 @@ Route::get('/ticket', function () {
 });
 Auth::routes();
 
+Route::get('/home', 'HomeController@index')->name('home');
+
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::middleware('auth')->group(function () {
+
+    Route::get('/compte', function () {
+        return view('compte');
+    });
+
+});
