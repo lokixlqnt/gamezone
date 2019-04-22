@@ -29,3 +29,7 @@ Route::get('/mentions', function () {
 
 Route::get('/events','EventController@index')->name('events.index');
 Route::post('/events', 'EventController@addEvent')->name('events.add');
+
+Route::get('/plan', function () {
+    return view('plan');
+});
