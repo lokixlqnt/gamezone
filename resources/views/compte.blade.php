@@ -27,7 +27,9 @@
     </div>
   </div>
   <div class="divform">
+      <p>Expérience : {{ Auth::user()->experience }}</p>
     <form method="POST"> @csrf
+
       <h2 class="formtitre">PROFIL</h2>
       <label for="pseudo">Pseudo : {{ Auth::user()->nickname }}</label>
       <input type="text" name="pseudo" required/>
@@ -38,6 +40,7 @@
       <label for="pseudo">Ville : {{ Auth::user()->city }}</label>
       <input type="text" name="ville"/>
       <input type="submit" name="submit" class="submit" value="Valider" />
+
     </form>
 
     <form id="logout-form" action="{{ route('logout') }}" method="POST">
