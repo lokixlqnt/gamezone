@@ -31,7 +31,9 @@
     <p>Vous dirigez une équipe de soldats en charge de découvrir ce qui est arrivé aux scientifiques du laboratoire minier Omega Centuri B.
             Une fois à bord, vous apprenez qu’un terrible virus a fait muter tout l’équipage, et que la station spatiale est maintenant infestée par d’horribles zombies !
             Vous devez donc évacuer votre équipe en tentant de survivre le plus longtemps possible.</p>
-    <a href="#" class="back">Retour à la liste des attractions</a>
+</div>
+<div class="end">
+    <a href="#">Retour à la liste des attractions</a>
 </div>
 </section>
 </main>

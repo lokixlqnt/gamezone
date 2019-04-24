@@ -1,3 +1,7 @@
+main {
+    margin-top: 80px!important;
+}
+
 header {
     background-image: url("../img/attractions/vr.jpg");
     background-repeat: no-repeat;
@@ -8,7 +12,7 @@ header {
 }
 .attraction {
     width: 100%;
-    height: 50em;
+    height: auto;
 }
 .sidebar {
     float: left;
@@ -86,15 +90,90 @@ header {
 
 }
 
-.back {
+.end {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.end a {
+    z-index: 100;
     text-transform: uppercase;
     color: #881F6A;
-    padding-left: 20%;
-    bottom: 0 auto;
     text-decoration: none;
 }
 
 
-.back:hover {
+.end a:hover {
     text-decoration: underline;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .description {
+        width: 50%;
+        height: 100%;
+    }
+    .description p {
+        width: 80%;
+        font-size: 1.1em;
+    
+    }
+    .sidebar {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .description {
+        width: 50%;
+        height: 100%;
+    }
+    .description p {
+        width: 80%;
+        font-size: 1.1em;
+    
+    }
+    .sidebar {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .sidebar {
+        float: none;
+        width: 100%;
+    }
+
+    .description {
+        float: none;
+        width: 100%;
+        height: auto;
+        padding-top: 0;
+        color: var(--color-primary);
+    }
+    
+    .description h2 {
+        text-transform: uppercase;
+        font-size: 2em;
+        margin-left: 10%;
+    }
+    
+    .description hr {
+        background-color: var(--color-yellow);
+        height: 0.5em;
+        width: 90%;
+        margin-left: 0;
+        border: none;
+    }
+    
+    .description p {
+        width: 80%;
+        margin-top: 10%;
+        margin-left: 10%;
+        font-size: 1em;
+        line-height: 1.2em;
+        letter-spacing: 0.06em;
+    }
 }
