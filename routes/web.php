@@ -36,6 +36,14 @@ Route::get('/ticket', function () {
     return view('ticket');
 });
 
+Route::get('log', function () {
+    return view('log');
+});
+
+Route::get('register', function () {
+    return view('register');
+});
+
 Route::get('/home', 'HomeController@index')->name('home');
 
 
