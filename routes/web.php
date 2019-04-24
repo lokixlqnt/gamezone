@@ -38,3 +38,11 @@ Route::get('/attractions', function () {
 Route::get('/attraction', function () {
     return view('attraction');
 });
+
+Route::get('/log', function () {
+    return view('log');
+});
+
+Route::get('/reg', function () {
+    return view('register');
+});
