@@ -11,6 +11,7 @@
             </li>
             <li><a class="border" href="#">Plan</a></li>
             <li><a class="game" href="#">My game</a></li>
+
         </ul>
         <ul id="langue">
             <li><a href="#"><img src="{{ url('img/flags/fr.png') }}" alt="Français"></a>
