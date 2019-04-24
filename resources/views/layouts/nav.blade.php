@@ -1,7 +1,7 @@
 <nav>
         <a href="./"><img class="logo" src="{{ url('img/logo_gamezone.png') }}" alt="gamezone"></a>
         <ul id="menu">
-            <li><a class="border" href="#">Attractions</a></li>
+            <li><a class="border" href="./attractions">Attractions</a></li>
             <li><a class="border" href="#">Préparer ma visite</a>
                 <ul>
                     <li><a href="#">Se rendre au parc</a></li>
