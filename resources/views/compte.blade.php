@@ -11,8 +11,13 @@
 <main>
   <div class="zonebleu">
     <h1>MON AVATAR</h1>
+    <form id="logout-form" action="{{ route('logout') }}" method="POST">
+            @csrf
+        <li><input type="submit" value="Déconnexion"></li>
+        </form>
     <div class="rondavatar">
       <div class="rond">
+
         <a href="#"><img class="imgavatar" src="{{ url('img/avatar_snake.png') }}" /></a>
       </div>
       <div class="rond active">
@@ -27,7 +32,21 @@
     </div>
   </div>
   <div class="divform">
+<<<<<<< HEAD
       <p>Expérience : {{ Auth::user()->experience }}</p>
+=======
+
+    <form method ="POST">  @csrf
+      <h2 class="formtitre">PROFIL</h2>
+      <label for="pseudo">Votre Pseudo : {{ Auth::user()->nickname }}</label>
+      <input type="text" name="pseudo" required/>
+      <label for="pseudo">Votre Nom : {{ Auth::user()->name  }}</label>
+      <input type="text" name="nom"/>
+      <label for="pseudo"> Votre Prénom : {{ Auth::user()->firstname }}</label>
+      <input type="text" name="prenom"/>
+      <label for="pseudo">Votre ville : {{ Auth::user()->city }}</label>
+
+>>>>>>> a6dd3722b6a9f3ea3a4a7fa9c17ee4b327564569
     <form method="POST"> @csrf
 
       <h2 class="formtitre">PROFIL</h2>
@@ -38,6 +57,7 @@
       <label for="pseudo">Prenom : {{ Auth::user()->firstname }}</label>
       <input type="text" name="prenom"/>
       <label for="pseudo">Ville : {{ Auth::user()->city }}</label>
+
       <input type="text" name="ville"/>
       <input type="submit" name="submit" class="submit" value="Valider" />
 

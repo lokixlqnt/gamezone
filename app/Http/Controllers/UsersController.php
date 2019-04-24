@@ -1,9 +1,9 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\User;
 
 use Illuminate\Http\Request;
+use App\User;
 
 class UsersController extends Controller
 {
@@ -12,11 +12,6 @@ class UsersController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
-    {
-        // $users = users::all();
-        // return view('administration', ['users' => $users]);
-    }
 
     /**
      * Show the form for creating a new resource.
@@ -47,7 +42,7 @@ class UsersController extends Controller
      */
     public function show($id)
     {
-
+        //
     }
 
     /**
@@ -68,10 +63,18 @@ class UsersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
-    {
+    // public function update(Request $request, $id)
+    // {
+    //     $users = User::all();
+    //     return view ('compte', ['users' => $users]);
+    // }
 
-    }
+
+    // public function index()
+    // {
+    //     $users = Users::all();
+    //     return view ('administration', ['users' => $users]);
+    // }
 
     /**
      * Remove the specified resource from storage.
