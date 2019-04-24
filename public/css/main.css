@@ -319,7 +319,33 @@ ul#middle {
     width: 25%;
 }
 
+.social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 
+  
+.social a img {
+    width: 48px;
+    height: 48px;
+}
+
+p.number {
+    font-size: 1.8em;
+}
+
+hr {
+    border: solid 2px var(--color-yellow);
+    width: 80%;
+}
+
+.hour {
+    margin-top: 0.5em;
+    font-size: 1.2em;
+    white-space: pre-line;
+    text-align: center;
+}
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
     .logo {

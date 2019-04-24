@@ -1,4 +1,4 @@
-@extends('layouts.app')
+<!-- @extends('layouts.app')
 
 @section('title', 'Register')
 
@@ -46,4 +46,4 @@
     </div>
 
 </main>
-@endsection
+@endsection -->

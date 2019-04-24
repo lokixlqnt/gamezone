@@ -44,9 +44,19 @@
         </div>
 
         <div class="right_footer">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil magni asperiores assumenda saepe sint libero
-            qui facilis nam, optio deserunt provident laborum aut, architecto consequatur totam ipsa corrupti deleniti
-            beatae!
+        <p>Rejoignez nous sur nos réseaux</p>
+            <div class="social">
+                <a href="#"><img src="{{ url('img/social/insta.svg') }}" alt="Instagram"></a>
+                <a href="#"><img src="{{ url('img/social/youtube.svg') }}" alt="Youtube"></a>
+                <a href="#"><img src="{{ url('img/social/facebook.svg') }}" alt="Facebook"></a>
+                <a href="#"><img src="{{ url('img/social/twitter.svg') }}" alt="Twitter"></a>
+            </div>
+        <p class="number">08 59 62 08 59</p>
+        <hr/>
+        <div class="hour">Du lundi au jeudi : 9h-19h
+Du vendredi au samedi : 9h-20h
+Le dimanche : 9h – 18h
+        </div>
         </div>
     </footer>
 </body>
