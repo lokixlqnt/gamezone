@@ -17,9 +17,7 @@ Route::middleware('auth')->group(function () {
 
 
 
-Route::get('/compte', function () {
-    return view('compte');
-});
+
 
 });
 
@@ -38,9 +36,24 @@ Route::get('/mentions', function () {
 Route::get('/ticket', function () {
     return view('ticket');
 });
+<<<<<<< HEAD
 
+=======
+>>>>>>> 164fdd189804d246230d8900172f1fe8eaf14701
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+<<<<<<< HEAD
 // Route::get('/compte', 'UsersController@index')->name('compte');
+=======
+Auth::routes();
+
+Route::middleware('auth')->group(function () {
+
+    Route::get('/compte', function () {
+        return view('compte');
+    });
+
+});
+>>>>>>> 164fdd189804d246230d8900172f1fe8eaf14701
