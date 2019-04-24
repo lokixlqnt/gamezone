@@ -1,1 +1,165 @@
-.message{border:1px solid #d2d0d0;padding:2em;font-size:1.7vw;box-shadow:-2px 2px 10px 0 rgba(68,68,68,.4)}@supports (display:grid){.message{display:none}}.section{display:none;padding:2rem}@media screen and (min-width:768px){.section{padding:4rem}}@supports (display:grid){.section{display:block}}.grid{display:grid;grid-gap:30px;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));grid-auto-rows:150px;grid-auto-flow:row dense}.item{position:relative;display:flex;flex-direction:column;justify-content:flex-end;box-sizing:border-box;color:#fff;grid-column-start:auto;grid-row-start:auto;background-size:cover;background-position:50%;box-shadow:-2px 2px 10px 0 rgba(68,68,68,.4);transition:-webkit-transform .3s ease-in-out;transition:transform .3s ease-in-out;transition:transform .3s ease-in-out,-webkit-transform .3s ease-in-out;cursor:pointer;counter-increment:item-counter}.item:first-child{background-image:url(../img/fond_fighter_league.jpg);background-position-x:40%}.item:nth-child(2){background-image:url(../img/fond_heroes_team.jpg)}.item:nth-child(2) .item__image{height:60%;width:auto}.item:nth-child(3){background-image:url(../img/fond_contagion_vr.jpg);background-position-x:30%}.item:nth-child(4){background-image:url(../img/fond_fighter_hard.jpg)}.item:nth-child(5){background-image:url(../img/fond_battle_kart.png)}.item:nth-child(6){background-image:url(../img/fond_game_center.jpg);background-position-x:60%}.item:nth-child(6) .item__image{margin-top:2em}.item:nth-child(7){background-image:url(../img/fond_awsome_heroes.jpg)}.item:nth-child(8){background-image:url(../img/stade.jpg)}.item:nth-child(9){background-image:url(../img/fond_champions_league.jpg)}.item:after{content:"";position:absolute;width:100%;height:100%;background-color:#000;opacity:.2;transition:opacity .3s ease-in-out}.item:hover{-webkit-transform:scale(1.05);transform:scale(1.05)}.item:hover:after{opacity:0}.item--large,.item--medium{grid-row-end:span 2}.item--large{grid-column-end:span 2}.item--long{grid-row-end:span 4;grid-column-end:span 1}.item__image{position:relative;z-index:2;padding:15px;width:80%;margin:0 auto}.item .txt{color:#fff;background:linear-gradient(180deg,rgba(28,31,61,0),rgba(28,31,61,.5) 16.15%,rgba(28,31,61,.62302) 23.96%,rgba(28,31,61,.820923) 43.75%,#1c1f3d 77.08%);padding:.7em .7em .7em .9em;height:110px;text-align:center;font-size:1.1em;z-index:1}.item .bold{font-weight:bolder;font-size:1.1em}.item a{text-decoration:none;color:#f6cd40;text-align:center;font-size:1em;font-weight:bolder;width:auto;margin:auto}.item a:hover{padding-left:1em;padding-right:1em;border-left:1px solid #f6cd40;border-right:1px solid #f6cd40}
+.message {
+  border: 1px solid #d2d0d0;
+  padding: 2em;
+  font-size: 1.7vw;
+  box-shadow: -2px 2px 10px 0px rgba(68, 68, 68, 0.4);
+}
+@supports (display: grid) {
+  .message {
+    display: none;
+  }
+}
+
+.section {
+  display: none;
+  padding: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .section {
+    padding: 4rem;
+  }
+}
+@supports (display: grid) {
+  .section {
+    display: block;
+  }
+}
+
+.grid {
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-auto-rows: 150px;
+  grid-auto-flow: row dense;
+}
+
+.item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  color: #fff;
+  grid-column-start: auto;
+  grid-row-start: auto;
+  background-size: cover;
+  background-position: center;
+  box-shadow: -2px 2px 10px 0px rgba(68, 68, 68, 0.4);
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
+  cursor: pointer;
+  counter-increment: item-counter;
+}
+.item:nth-child(1) {
+  background-image: url("../img/fond_fighter_league.jpg");
+  background-position-x: 40%;
+}
+.item:nth-child(2) {
+  background-image: url("../img/fond_heroes_team.jpg");
+}
+.item:nth-child(2) .item__image {
+  height: 60%;
+  width: auto;
+}
+.item:nth-child(3) {
+  background-image: url("../img/fond_contagion_vr.jpg");
+  background-position-x: 30%;
+}
+.item:nth-child(4) {
+  background-image: url("../img/fond_fighter_hard.jpg");
+}
+.item:nth-child(4) .item__image {
+  height: 60%;
+  width: auto;
+}
+.item:nth-child(5) {
+  background-image: url("../img/fond_battle_kart.png");
+}
+.item:nth-child(6) {
+  background-image: url("../img/fond_game_center.jpg");
+  background-position-x: 60%;
+}
+.item:nth-child(6) .item__image {
+  margin-top: 2em;
+}
+.item:nth-child(7) {
+  background-image: url("../img/fond_awsome_heroes.jpg");
+}
+.item:nth-child(7) .item__image {
+  height: 60%;
+  width: auto;
+}
+.item:nth-child(8) {
+  background-image: url("../img/stade.jpg");
+}
+.item:nth-child(9) {
+  background-image: url("../img/fond_champions_league.jpg");
+}
+.item:nth-child(9) .item__image {
+  height: 60%;
+  width: auto;
+}
+.item:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.2;
+  transition: opacity 0.3s ease-in-out;
+}
+.item:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+.item:hover:after {
+  opacity: 0;
+}
+.item--medium {
+  grid-row-end: span 2;
+}
+.item--large {
+  grid-row-end: span 2;
+  grid-column-end: span 2;
+}
+.item--long {
+  grid-row-end: span 4;
+  grid-column-end: span 1;
+}
+.item__image {
+  position: relative;
+  z-index: 2;
+  padding: 15px;
+  width: 80%;
+  margin: 0 auto;
+}
+.item .txt {
+  color: #fff;
+  background: linear-gradient(180deg, rgba(28, 31, 61, 0) 0%, rgba(28, 31, 61, 0.5) 16.15%, rgba(28, 31, 61, 0.62302) 23.96%, rgba(28, 31, 61, 0.820923) 43.75%, #1C1F3D 77.08%);
+  padding: 0em;
+  padding-left: 0.9em;
+  height: 140px;
+  text-align: center;
+  font-size: 1.1em;
+  z-index: 1;
+}
+.item .bold {
+  font-weight: bolder;
+  font-size: 1.1em;
+}
+.item a {
+  text-decoration: none;
+  color: #F6CD40;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bolder;
+  width: auto;
+  margin: auto;
+}
+.item a:hover {
+  padding-left: 1em;
+  padding-right: 1em;
+  border-left: 1px solid #F6CD40;
+  border-right: 1px solid #F6CD40;
+}
