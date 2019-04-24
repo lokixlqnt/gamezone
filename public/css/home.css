@@ -12,7 +12,7 @@ main {
 
 .titre {
     float: left;
-    background: rgba(239,199,50, 0.8);
+    background: rgba(239, 199, 50, 0.8);
     padding: 0.5em 1.2em;
     color: var(--color-primary);
     font-weight: 800;
@@ -57,8 +57,12 @@ main {
     width: 100%;
     height: 450px;
     margin-bottom: 7%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 #presentation .blocg {
@@ -69,6 +73,8 @@ main {
 }
 
 .blocg img {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 350px;
     height: auto;
@@ -102,17 +108,31 @@ main {
 }
 
 .chiffre {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     width: 100%;
 }
 
 .box {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     background: var(--color-yellow);
     margin: 2em;
     border-radius: 25px;
@@ -132,6 +152,8 @@ main {
 
 .bar_attractions {
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 7%;
     margin-bottom: 2%;
@@ -154,7 +176,7 @@ section#attractions {
 }
 
 section#attractions .box1 {
-    float:left;
+    float: left;
     background-image: url(../img/fond_champions.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -162,7 +184,7 @@ section#attractions .box1 {
 }
 
 section#attractions .box2 {
-    float:left;
+    float: left;
     background-image: url(../img/fond_fighter_hard.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -170,7 +192,7 @@ section#attractions .box2 {
 }
 
 section#attractions .box3 {
-    float:left;
+    float: left;
     background-image: url(../img/fond_contagion_vr.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -178,7 +200,7 @@ section#attractions .box3 {
 }
 
 section#attractions .box4 {
-    float:left;
+    float: left;
     background-image: url(../img/fond_fighter_league.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -186,7 +208,7 @@ section#attractions .box4 {
 }
 
 section#attractions .box5 {
-    float:left;
+    float: left;
     background-image: url(../img/fond_game_center.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -194,7 +216,7 @@ section#attractions .box5 {
 }
 
 section#attractions .box6 {
-    float:left;
+    float: left;
     background-image: url(../img/fond_heroes_team.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -202,7 +224,7 @@ section#attractions .box6 {
 }
 
 section#attractions .box7 {
-    float:left;
+    float: left;
     background-image: url(../img/fond_awsome_heroes.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -210,7 +232,7 @@ section#attractions .box7 {
 }
 
 section#attractions .box8 {
-    float:left;
+    float: left;
     background-image: url(../img/fond_battle_kart.png);
     background-repeat: no-repeat;
     background-size: cover;
@@ -218,7 +240,7 @@ section#attractions .box8 {
 }
 
 section#attractions .box9 {
-    float:left;
+    float: left;
     background-image: url(../img/fond_champions_league.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -245,15 +267,25 @@ section#attractions img {
 }
 
 .background_img {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     padding-bottom: 0px;
     height: 0;
 }
 
 .background_attractions {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     height: 480px;
 }
 
@@ -321,6 +353,8 @@ section#attractions img {
 }
 
 #attractions .position {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin: 0 auto;
     margin-bottom: 8%;
@@ -340,7 +374,10 @@ figure {
 figure.effect-sadie img {
     margin-top: 20%;
     -webkit-transition: -webkit-transform 0.40s, color 0.35s;
+    -webkit-transition: color 0.35s, -webkit-transform 0.40s;
+    transition: color 0.35s, -webkit-transform 0.40s;
     transition: transform 0.40s, color 0.35s;
+    transition: transform 0.40s, color 0.35s, -webkit-transform 0.40s;
     -webkit-transform: translate3d(0, 60%, 0);
     transform: translate3d(0, 60%, 0);
 }
@@ -348,20 +385,26 @@ figure.effect-sadie img {
 figure.effect-sadie figcaption::before,
 figure.effect-sadie p {
     -webkit-transition: opacity 0.35s, -webkit-transform 0.40s;
+    transition: opacity 0.35s, -webkit-transform 0.40s;
     transition: opacity 0.35s, transform 0.40s;
+    transition: opacity 0.35s, transform 0.40s, -webkit-transform 0.40s;
 }
 
 figure.effect-sadie figcaption::before,
 figure.effect-sadie .background_attractions {
     -webkit-transition: opacity 0.35s, -webkit-transform 0.40s;
+    transition: opacity 0.35s, -webkit-transform 0.40s;
     transition: opacity 0.35s, transform 0.40s;
+    transition: opacity 0.35s, transform 0.40s, -webkit-transform 0.40s;
 
 }
 
 figure.effect-sadie figcaption::before,
 figure.effect-sadie button {
     -webkit-transition: opacity 0.35s, -webkit-transform 0.40s;
+    transition: opacity 0.35s, -webkit-transform 0.40s;
     transition: opacity 0.35s, transform 0.40s;
+    transition: opacity 0.35s, transform 0.40s, -webkit-transform 0.40s;
 }
 
 figure.effect-sadie p {
@@ -400,6 +443,7 @@ figure.effect-sadie:hover .background_attractions {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
     /* background: linear-gradient(180deg, rgba(28, 31, 61, 0) 0%, rgba(28, 31, 61, 0.5) 0.01%, rgba(28, 31, 61, 0.820923) 36.46%, #1C1F3D 77.08%); */
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(28, 31, 61, 0)), color-stop(36.98%, rgba(28, 31, 61, 0.5)), color-stop(55.73%, rgba(28, 31, 61, 0.820923)), color-stop(77.08%, #1C1F3D));
     background: linear-gradient(180deg, rgba(28, 31, 61, 0) 0%, rgba(28, 31, 61, 0.5) 36.98%, rgba(28, 31, 61, 0.820923) 55.73%, #1C1F3D 77.08%);
 }
 
@@ -410,15 +454,13 @@ figure.effect-sadie:hover button {
     transform: translate3d(0, 0, 0);
 }
 
-@media screen and (min-width: 992px) and (max-width: 1199px) {
-
-}
+@media screen and (min-width: 992px) and (max-width: 1199px) {}
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     #presentation .blocg {
         width: 5%;
     }
-    
+
     #presentation .blocd {
         width: 100%;
     }
@@ -428,14 +470,15 @@ figure.effect-sadie:hover button {
     }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 576px) and (max-width: 767px) {
     .bloc_header {
         position: absolute;
         bottom: 0;
     }
+
     .titre {
         float: left;
-        background: rgba(239,199,50, 0.8);
+        background: rgba(239, 199, 50, 0.8);
         padding: 0.5em 1.2em;
         border-radius: 0px 0px 0px 0px;
         width: 100%;
@@ -445,7 +488,7 @@ figure.effect-sadie:hover button {
     #presentation .blocg {
         width: 5%;
     }
-    
+
     #presentation .blocd {
         width: 100%;
         height: auto;
@@ -464,47 +507,137 @@ figure.effect-sadie:hover button {
     }
 
     section#attractions .box1 {
-        float:none;
+        float: none;
         width: 100%;
     }
-    
+
     section#attractions .box2 {
-        float:none;
+        float: none;
         width: 100%;
     }
-    
+
     section#attractions .box3 {
-        float:none;
+        float: none;
         width: 100%;
     }
-    
+
     section#attractions .box4 {
-        float:none;
+        float: none;
         width: 100%;
     }
-    
+
     section#attractions .box5 {
-        float:none;
+        float: none;
         width: 100%;
     }
-    
+
     section#attractions .box6 {
-        float:none;
+        float: none;
         width: 100%;
     }
-    
+
     section#attractions .box7 {
-        float:none;
+        float: none;
         width: 100%;
     }
-    
+
     section#attractions .box8 {
-        float:none;
+        float: none;
         width: 100%;
     }
-    
+
     section#attractions .box9 {
-        float:none;
+        float: none;
         width: 100%;
+    }
+
+    .background_attractions p {
+        margin-top: 40%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .bloc_header {
+        position: absolute;
+        bottom: 0;
+    }
+
+    .titre {
+        float: left;
+        background: rgba(239, 199, 50, 0.8);
+        padding: 0.5em 1.2em;
+        border-radius: 0px 0px 0px 0px;
+        width: 100%;
+        font-size: 2em;
+    }
+
+    #presentation .blocg {
+        width: 5%;
+    }
+
+    #presentation .blocd {
+        width: 100%;
+        height: auto;
+    }
+
+    .blocg img {
+        display: none;
+    }
+
+    .blocd p {
+        font-size: 1.2em;
+    }
+
+    .bar_attractions h2 {
+        font-size: 1em;
+    }
+
+    section#attractions .box1 {
+        float: none;
+        width: 100%;
+    }
+
+    section#attractions .box2 {
+        float: none;
+        width: 100%;
+    }
+
+    section#attractions .box3 {
+        float: none;
+        width: 100%;
+    }
+
+    section#attractions .box4 {
+        float: none;
+        width: 100%;
+    }
+
+    section#attractions .box5 {
+        float: none;
+        width: 100%;
+    }
+
+    section#attractions .box6 {
+        float: none;
+        width: 100%;
+    }
+
+    section#attractions .box7 {
+        float: none;
+        width: 100%;
+    }
+
+    section#attractions .box8 {
+        float: none;
+        width: 100%;
+    }
+
+    section#attractions .box9 {
+        float: none;
+        width: 100%;
+    }
+
+    .background_attractions p {
+        margin-top: 60%;
     }
 }
