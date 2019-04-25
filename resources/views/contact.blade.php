@@ -39,9 +39,6 @@
             </div>
 
             <div class="inscription">
-                <span>Pas encore inscrit ?<a href="#">Inscription</a></span>
-            </div>
-            <div class="inscription">
                 <a href="#">Mot de passe oublié ?</a>
             </div>
         </div>

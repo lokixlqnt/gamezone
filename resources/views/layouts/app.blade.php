@@ -42,18 +42,18 @@
                 </a>
             </ul>
             <ul id="middle">
-                <a href="#">
+                <a hphp artisan make:controllerref="#">
                     <li>On Recrute</li>
                 </a>
-                <a href="#">
+                <a href="contact">
                     <li>Nous Contacter</li>
                 </a>
             </ul>
             <ul>
-                <a href="./cgv">
+                <a href="{{ route('cgv') }}">
                     <li>Conditions de vente</li>
                 </a>
-                <a href="./mentions">
+                <a href="{{ route('mentionslegales') }}">
                     <li>Conditions légales</li>
                 </a>
             </ul>
