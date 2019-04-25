@@ -9,27 +9,30 @@
   crossorigin=""></script>
 @section('content')
 
- <div id="map" style="height: 50vh; width: auto;">
+ <div id="map" style="height: 50vh;min-height: 800px;width: 100%;"></div>
    <script type="text/javascript">
 
     var map = L.map('map', {
-        maxZoom: 10,
-        minZoom: 0,
-        continuousWorld: false,
+    //    maxZoom: 0,
+      //  minZoom: 0,
+      //  zoom:2,
+        //continuousWorld: false,
         noWrap: true,
         zoomControl: false,
-
         crs: L.CRS.Simple
-    }).setView([0, 0], 0);
+    });
 
-    map.setMaxBounds(new L.LatLngBounds([0,0], [0,0]));
+    // map.fitWorld([3508,2580], 0);
 
-    var imageUrl = 'https://i.ibb.co/z2cks9R/00-le-plan-vierge.jpg';
-    var imageBounds = [3508,2580] ;
+    //map.setMaxBounds(new L.LatLngBounds([0,0], [0,0]));
+    var bounds = [[0,0], [2500,3500]];
+  //  var imageUrl = '{{ url('img/plan.jpg') }}';
+  //  var imageBounds = [0,0] ;
 
-    L.imageOverlay(imageUrl, imageBounds).addTo(map);
-
+  //  L.imageOverlay(imageUrl, imageBounds).addTo(map);
+    var image = L.imageOverlay('{{ url('img/plan.jpg') }}', bounds).addTo(map);
+    map.fitBounds(bounds);
    </script>
- </div>
+
 
 @endsection
