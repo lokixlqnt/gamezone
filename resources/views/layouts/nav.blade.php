@@ -14,8 +14,14 @@
 
             @if(Auth::user())
             <li>
-            <form id="logout-form" action="{{ route('logout') }}" method="POST">
-            <input  type="submit" value="Déconnexion">
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                    <input  type="submit" value="Déconnexion">
+                @csrf
+            </li>
+            @else ()
+            <li>
+                <form id="login-form" action="{{ route('login') }}" method="POST">
+                <input  type="submit" value="Connexion">
                 @csrf
             </li>
             @endif
