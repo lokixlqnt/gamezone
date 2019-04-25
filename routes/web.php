@@ -30,3 +30,7 @@ Route::get('/mentions', function () {
 Route::get('/ticket', function () {
     return view('ticket');
 });
+
+Route::get('/recrute', function () {
+    return view('recrute');
+});
