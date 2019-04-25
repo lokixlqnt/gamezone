@@ -19,17 +19,13 @@
         //continuousWorld: false,
         noWrap: true,
         zoomControl: false,
+        maxBoundsViscosity: 1.0,
         crs: L.CRS.Simple
     });
 
-    // map.fitWorld([3508,2580], 0);
 
-    //map.setMaxBounds(new L.LatLngBounds([0,0], [0,0]));
     var bounds = [[0,0], [2500,3500]];
-  //  var imageUrl = '{{ url('img/plan.jpg') }}';
-  //  var imageBounds = [0,0] ;
 
-  //  L.imageOverlay(imageUrl, imageBounds).addTo(map);
     var image = L.imageOverlay('{{ url('img/plan.jpg') }}', bounds).addTo(map);
     map.fitBounds(bounds);
    </script>
