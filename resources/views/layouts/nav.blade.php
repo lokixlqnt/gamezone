@@ -24,7 +24,8 @@
         </ul>
         <div class="avatar">
 
-            <span><a href="{{ route('compte') }}">{{ Auth::user()->nickname}}</a></span>
+            <span><a href="{{ route('compte') }}">
+            @if(Auth::user()){{ Auth::user()->nickname}} @endif</a></span>
                 <a href="{{ route('compte') }}">
             <img src="{{ url('img/avatar_snake.png') }}" alt="Snake">
                 </a>
