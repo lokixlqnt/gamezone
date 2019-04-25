@@ -87,7 +87,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#881f6a', end
 .login {
     display: flex;
     flex-direction: row-reverse;
-    margin-top: 1em;
+    margin-top: 5em;
     margin-right: 8%;
 }
 
@@ -123,4 +123,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#881f6a', end
 
 .inscription a:hover {
     color: white;
+}
+
+.message {
+  margin-left: 8%;
+  margin-top: 5%;
+  height: 100px;
+  width: 335px;
+  border-radius: 5px;
 }

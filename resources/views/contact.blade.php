@@ -13,33 +13,29 @@
         <div class="bloc">
 
             <div class="bloc_titre">
-                <span>Connectez-vous</span>
+                <span>Nous contacter</span>
             </div>
 
             <div class="bloc_form">
-                <form>
+                <form action="{{ url('/contact')}}" method="post">
 
                     <div id="form">
-                        <span><img src="{{ url ('img/log/icon_utilisateur.png') }}" alt="Utilisateur"></span>
-                        <input type="text" class="bloc_champ" placeholder="Nom de compte">
+                        <span><img src="{{ url ('img/log/icon_utilisateur.png') }}" alt="nom"></span>
+                        <input type="text" class="bloc_champ" placeholder="Nom">
                     </div>
 
                     <div id="form">
-                        <span><img src="{{ url ('img/log/icon_password.png') }}" alt="Password"></span>
-                        <input type="password" class="bloc_champ" placeholder="Mot de passe">
+                        <span><img src="{{ url ('img/log/icon_email.png') }}" alt="mail"></span>
+                        <input type="text" class="bloc_champ" placeholder="Email">
                     </div>
-                    <div class="checkbox">
-                        <input type="checkbox">Se souvenir de moi
+                    <div id="form">
+                        <textarea name="texte" rows="8" cols="80" placeholder="Votre message" class="message"></textarea>
                     </div>
                     <div class="login">
-                        <input type="submit" value="Se connecter">
+                        <input type="submit" value="Envoyer">
                     </div>
 
                 </form>
-            </div>
-
-            <div class="inscription">
-                <a href="#">Mot de passe oublié ?</a>
             </div>
         </div>
 </main>
