@@ -31,37 +31,29 @@
       </div>
     </div>
   </div>
-  <div class="divform">
 
-    <form method ="POST">  @csrf
+  <div class="divform">
+    <form method ="POST" action="">  @csrf
       <h2 class="formtitre">PROFIL</h2>
       <label for="pseudo">Votre Pseudo : {{ Auth::user()->nickname }}</label>
-      <input type="text" name="pseudo" required/>
+      {{-- <input type="text" name="pseudo" /> --}}
+      <input type="submit" name="submit" class="submit" value="Modifier" />
+
       <label for="pseudo">Votre Nom : {{ Auth::user()->name  }}</label>
-      <input type="text" name="nom"/>
+      {{-- <input type="text" name="nom" /> --}}
+      <input type="submit" name="submit" class="submit" value="Modifier" />
+
+
       <label for="pseudo"> Votre Prénom : {{ Auth::user()->firstname }}</label>
-      <input type="text" name="prenom"/>
+      {{-- <input type="text" name="prenom" /> --}}
+      <input type="submit" name="submit" class="submit" value="Modifier" />
+
       <label for="pseudo">Votre ville : {{ Auth::user()->city }}</label>
+      {{-- <input type="text" name="ville"/> --}}
+      <input type="submit" name="submit" class="submit" value="Modifier" />
 
-    <form method="POST"> @csrf
-      <h2 class="formtitre">PROFIL</h2>
-      <label for="pseudo">Pseudo : {{ Auth::user()->nickname }}</label>
-      <input type="text" name="pseudo" required/>
-      <label for="pseudo">Nom : {{ Auth::user()->name }}</label>
-      <input type="text" name="nom"/>
-      <label for="pseudo">Prenom : {{ Auth::user()->firstname }}</label>
-      <input type="text" name="prenom"/>
-      <label for="pseudo">Ville : {{ Auth::user()->city }}</label>
 
-      <input type="text" name="ville"/>
-      <input type="submit" name="submit" class="submit" value="Valider" />
-    </form>
-
-    <form id="logout-form" action="{{ route('logout') }}" method="POST">
-        @csrf
-    <li><input type="submit" value="Déconnexion"></li>
-
-    </form>
-  </div>
+</form>
+</div>
 </main>
 @endsection
