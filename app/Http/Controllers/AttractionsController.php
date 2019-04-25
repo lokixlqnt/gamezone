@@ -3,15 +3,23 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\User;
+use App\Attraction;
 
-class UsersController extends Controller
+class AttractionsController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
+    public function index()
+    {
+        $attractions = Attraction::all();
+        return view ('attractions', ['attractions' => $attractions]);
+    }
+
+
+
 
     /**
      * Show the form for creating a new resource.
@@ -31,9 +39,7 @@ class UsersController extends Controller
      */
     public function store(Request $request)
     {
-        $user = new Users($request->all());
-        $user->save();
-        return $this->show($user->id);
+        //
     }
 
     /**
@@ -44,8 +50,8 @@ class UsersController extends Controller
      */
     public function show($id)
     {
-        $users =  User::find($id);
-        return view('compte', ['users' => $users]);
+        $attraction = Attraction::find($id);
+        return view('attraction', ['attraction' => $attraction]);
     }
 
     /**
@@ -54,13 +60,10 @@ class UsersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    // public function edit($id)
-    // {
-    //     $users = User::all();
-    //     return view('compte', ['users' => $users]);
-    // }
-
-
+    public function edit($id)
+    {
+        //
+    }
 
     /**
      * Update the specified resource in storage.
@@ -71,18 +74,8 @@ class UsersController extends Controller
      */
     public function update(Request $request, $id)
     {
-       $user = new Users ($request->all());
-        return $this->show($user->id);
-
-
+        //
     }
-
-
-    // public function index()
-    // {
-    //     $users = Users::all();
-    //     return view ('administration', ['users' => $users]);
-    // }
 
     /**
      * Remove the specified resource from storage.

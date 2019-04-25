@@ -24,6 +24,11 @@ Route::get('/', function () {
     return view('home');
 });
 
+Route::get('/home', function () {
+    return view('home');
+});
+
+
 Route::get('/cgv', function () {
     return view('cgv');
 });
@@ -36,18 +41,41 @@ Route::get('/ticket', function () {
     return view('ticket');
 });
 
-Route::get('/attractions', function () {
-    return view('attractions');
+// Route::get('/attractions', function () {
+//     return view('attractions');
+// });
+
+// Route::get('/attraction', function () {
+//     return view('attraction');
+// });
+
+Route::get('/attractions/', 'AttractionsController@index')->name('attractions');
+
+
+Route::get('/attraction/{id}', 'AttractionsController@show')->name('attraction');
+
+// Route::get('/compte/', 'UsersController@edit')->name('editusers');
+
+
+// Route::post('/compte/', 'UsersController@update')->name('updateusers');
+
+Route::get('/login', function () {
+    return view('login');
 });
 
-Route::get('/attraction', function () {
-    return view('attraction');
-});
-
-Route::get('/log', function () {
-    return view('log');
-});
-
-Route::get('/reg', function () {
+Route::get('/register', function () {
     return view('register');
 });
+
+Route::get('/comptedetails', function () {
+    return view('comptedetails');
+});
+
+Route::get('/compte/{id}', 'UsersController@show')->name('compte');
+Route::get('/compte', 'UsersController@update')->name('compte');
+Route::post('/comptedetails', 'UsersController@store')->name('newcompte');
+
+
+
+
+
