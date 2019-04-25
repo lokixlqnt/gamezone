@@ -43,6 +43,14 @@ Route::get('/attractions', 'AttractionsController@index')->name('attractions');
 
 Route::get('/attraction/{id}', 'AttractionsController@show')->name('attraction');
 
+Route::get('/recrute', 'RecruteController@index')->name('recrute');
+
+Route::get('/compte', 'UsersController@index')->name('compte');
+Route::get('/compte/{id}', 'UsersController@show')->name('compteUsers');
+Route::get('/compte/{id}/edit', 'UsersController@edit')->name('editUsers');
+Route::post('/compte/{id}/update', 'UsersController@update')->name('updateUsers');
+
+
 // Route::get('/compte/{id}', 'UsersController@show')->name('compte');
 
 // Route::get('/compte', 'UsersController@update')->name('compte');

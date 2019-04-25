@@ -42,7 +42,7 @@
                 </a>
             </ul>
             <ul id="middle">
-                <a hphp artisan make:controllerref="#">
+                <a href="{{ route('recrute') }}">
                     <li>On Recrute</li>
                 </a>
                 <a href="contact">

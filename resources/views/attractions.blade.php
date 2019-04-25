@@ -19,8 +19,11 @@
         <div class="grid">
                 @foreach($attractions as $attraction)
             <!-- img 1 -->
+
             <div class="{{ $attraction->classdiv}} ">
+
                 <img class="item__image" src="{{ $attraction->logo }}">
+
                 <div class="txt">
 
                     <p>
@@ -28,9 +31,11 @@
                         {{ $attraction->experience }} XP / partie  <br />
                         {{ $attraction->minheight }} <br />
                     </p>
+
                     <a href="{{ route('attraction', ['id' =>$attraction->id])}}">EN SAVOIR +</a>
                 </div>
             </div>
+
             @endforeach
 
             {{-- <!-- img 2 -->
