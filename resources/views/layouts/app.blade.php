@@ -17,7 +17,23 @@
 
     <footer>
         <div class="left_footer">
-            <ul>
+        <p>Rejoignez nous sur nos réseaux</p>
+            <div class="social">
+                <a href="#"><img src="{{ url('img/social/insta.svg') }}" alt="Instagram"></a>
+                <a href="#"><img src="{{ url('img/social/youtube.svg') }}" alt="Youtube"></a>
+                <a href="#"><img src="{{ url('img/social/facebook.svg') }}" alt="Facebook"></a>
+                <a href="#"><img src="{{ url('img/social/twitter.svg') }}" alt="Twitter"></a>
+            </div>
+            <p class="number">08 59 62 08 59</p>
+            <hr />
+            <div class="hour">Du lundi au jeudi : 9h-19h
+                Du vendredi au samedi : 9h-20h
+                Le dimanche : 9h – 18h
+            </div>
+        </div>
+
+        <div class="right_footer">
+        <ul>
                 <a href="#">
                     <li>A propos du Parc</li>
                 </a>
@@ -26,27 +42,21 @@
                 </a>
             </ul>
             <ul id="middle">
-                <a href="#">
+                <a hphp artisan make:controllerref="#">
                     <li>On Recrute</li>
                 </a>
-                <a href="#">
+                <a href="contact">
                     <li>Nous Contacter</li>
                 </a>
             </ul>
             <ul>
-                <a href="./cgv">
+                <a href="{{ route('cgv') }}">
                     <li>Conditions de vente</li>
                 </a>
-                <a href="./mentions">
+                <a href="{{ route('mentionslegales') }}">
                     <li>Conditions légales</li>
                 </a>
             </ul>
-        </div>
-
-        <div class="right_footer">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil magni asperiores assumenda saepe sint libero
-            qui facilis nam, optio deserunt provident laborum aut, architecto consequatur totam ipsa corrupti deleniti
-            beatae!
         </div>
     </footer>
 </body>

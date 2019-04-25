@@ -208,8 +208,7 @@
     </div>
 
     <div id="button_footer">
-        <button>Réserver
-            ma place</button>
+        <button><a href="{{ route('ticket') }}">Tarif et billetterie</a></button>
     </div>
 
 </main>

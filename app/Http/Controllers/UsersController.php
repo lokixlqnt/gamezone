@@ -31,7 +31,9 @@ class UsersController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $user = new Users($request->all());
+        $user->save();
+        return $this->show($user->id);
     }
 
     /**
@@ -42,7 +44,8 @@ class UsersController extends Controller
      */
     public function show($id)
     {
-        //
+        $users =  User::find($id);
+        return view('compte', ['users' => $users]);
     }
 
     /**
@@ -51,10 +54,13 @@ class UsersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
-        //
-    }
+    // public function edit($id)
+    // {
+    //     $users = User::all();
+    //     return view('compte', ['users' => $users]);
+    // }
+
+
 
     /**
      * Update the specified resource in storage.
@@ -63,18 +69,20 @@ class UsersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    // public function update(Request $request, $id)
-    // {
-    //     $users = User::all();
-    //     return view ('compte', ['users' => $users]);
-    // }
+    public function update(Request $request, $id)
+    {
+       $user = new Users ($request->all());
+        return $this->show($user->id);
 
 
-    // public function index()
-    // {
-    //     $users = Users::all();
-    //     return view ('administration', ['users' => $users]);
-    // }
+    }
+
+
+    public function index()
+        {
+        $users = User::all();
+        return view ('compte', ['users' => $users]);
+        }
 
     /**
      * Remove the specified resource from storage.
