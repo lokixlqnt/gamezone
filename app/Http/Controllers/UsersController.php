@@ -1,15 +1,15 @@
 <?php
 
 namespace App\Http\Controllers;
-<<<<<<< HEAD
+
 
 use Illuminate\Http\Request;
 use App\User;
-=======
+
 use App\User;
 
 use Illuminate\Http\Request;
->>>>>>> 164fdd189804d246230d8900172f1fe8eaf14701
+
 
 class UsersController extends Controller
 {
@@ -18,15 +18,15 @@ class UsersController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-<<<<<<< HEAD
 
-=======
+
+
     public function index()
     {
         // $users = users::all();
         // return view('administration', ['users' => $users]);
     }
->>>>>>> 164fdd189804d246230d8900172f1fe8eaf14701
+
 
     /**
      * Show the form for creating a new resource.
@@ -57,11 +57,9 @@ class UsersController extends Controller
      */
     public function show($id)
     {
-<<<<<<< HEAD
-        //
-=======
 
->>>>>>> 164fdd189804d246230d8900172f1fe8eaf14701
+        //
+
     }
 
     /**
@@ -82,7 +80,7 @@ class UsersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-<<<<<<< HEAD
+
     // public function update(Request $request, $id)
     // {
     //     $users = User::all();
@@ -95,12 +93,12 @@ class UsersController extends Controller
     //     $users = Users::all();
     //     return view ('administration', ['users' => $users]);
     // }
-=======
+
     public function update(Request $request, $id)
     {
 
     }
->>>>>>> 164fdd189804d246230d8900172f1fe8eaf14701
+
 
     /**
      * Remove the specified resource from storage.

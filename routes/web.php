@@ -51,3 +51,7 @@ Route::get('/log', function () {
 Route::get('/reg', function () {
     return view('register');
 });
+
+Route::get('/contact', function () {
+    return view('contact');
+});
