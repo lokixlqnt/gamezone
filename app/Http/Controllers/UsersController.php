@@ -78,11 +78,11 @@ class UsersController extends Controller
     }
 
 
-    // public function index()
-    // {
-    //     $users = Users::all();
-    //     return view ('administration', ['users' => $users]);
-    // }
+    public function index()
+        {
+        $users = Users::all();
+        return view ('compte', ['users' => $users]);
+        }
 
     /**
      * Remove the specified resource from storage.

@@ -1,11 +1,11 @@
 <nav>
         <a href="./"><img class="logo" src="{{ url('img/logo_gamezone.png') }}" alt="gamezone"></a>
         <ul id="menu">
-            <li><a class="border" href="./attractions">Attractions</a></li>
+            <li><a class="border" href="{{ route('attractions') }}">Attractions</a></li>
             <li><a class="border" href="#">Préparer ma visite</a>
                 <ul>
                     <li><a href="#">Se rendre au parc</a></li>
-                    <li><a href="./ticket">Tarif et billetterie</a></li>
+                    <li><a href="{{ route('ticket') }}">Tarif et billetterie</a></li>
                     <li><a href="#">Horaires & calendrier</a></li>
                 </ul>
             </li>
@@ -22,7 +22,7 @@
         </ul>
         </ul>
         <div class="avatar">
-            <span><a href="./compte">Mon compte</a></span>
+            <span><a href="{{ route('compte')}}">Mon compte</a></span>
             <img src="{{ url('img/avatar_snake.png') }}" alt="Snake">
         </div>
 </nav>

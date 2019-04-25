@@ -15,10 +15,11 @@
         Sorry, your browser does not support CSS Grid. 😅
     </div>
     <section class="section">
-            @foreach($attractions as $attraction)
+
         <div class="grid">
+                @foreach($attractions as $attraction)
             <!-- img 1 -->
-            <div class="item item--medium animated zoomIn">
+            <div class="{{ $attraction->classdiv}} ">
                 <img class="item__image" src="{{ $attraction->logo }}">
                 <div class="txt">
 
@@ -30,7 +31,9 @@
                     <a href="{{ route('attraction', ['id' =>$attraction->id])}}">EN SAVOIR +</a>
                 </div>
             </div>
-            <!-- img 2 -->
+            @endforeach
+
+            {{-- <!-- img 2 -->
             <div class="item item--large animated zoomIn">
                 <img class="item__image" src="{{ $attraction->logo }}">
                 <div class="txt">
@@ -128,7 +131,7 @@
             </div>
 
 
-        </div>
-        @endforeach
+        </div> --}}
+
 </main>
 @endsection
