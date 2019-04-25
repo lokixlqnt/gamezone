@@ -37,9 +37,9 @@ Route::get('/cgv', 'CGVController@index')->name('cgv');
 
 Route::get('/mentionslegales', 'MentionslegalesController@index')->name('mentionslegales');
 
-Route::get('/ticket/', 'TicketsController@index')->name('ticket');
+Route::get('/ticket', 'TicketsController@index')->name('ticket');
 
-Route::get('/attractions/', 'AttractionsController@index')->name('attractions');
+Route::get('/attractions', 'AttractionsController@index')->name('attractions');
 
 Route::get('/attraction/{id}', 'AttractionsController@show')->name('attraction');
 
@@ -50,19 +50,6 @@ Route::get('/attraction/{id}', 'AttractionsController@show')->name('attraction')
 // Route::post('/comptedetails', 'UsersController@store')->name('newcompte');
 
 // Route::get('/compte', 'UsersController@update')->name('compte')
-
-
-// Route::get('/cgv', function () {
-//     return view('cgv');
-// });
-
-// Route::get('/mentions', function () {
-//     return view('mentionslegales');
-// });
-
-// Route::get('/ticket', function () {
-//     return view('ticket');
-// });
 
 
 
@@ -79,10 +66,6 @@ Route::get('/attraction/{id}', 'AttractionsController@show')->name('attraction')
 // Route::get('/comptedetails', function () {
 //     return view('comptedetails');
 // });
-
-// Route::get('/compte/{id}', 'UsersController@show')->name('compte');
-// Route::get('/compte', 'UsersController@update')->name('compte');
-// Route::post('/comptedetails', 'UsersController@store')->name('newcompte');
 
 
 
