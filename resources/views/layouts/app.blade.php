@@ -42,10 +42,10 @@
                 </a>
             </ul>
             <ul id="middle">
-                <a href="#">
+                <a hphp artisan make:controllerref="#">
                     <li>On Recrute</li>
                 </a>
-                <a href="#">
+                <a href="contact">
                     <li>Nous Contacter</li>
                 </a>
             </ul>
