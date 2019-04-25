@@ -45,7 +45,7 @@ class UsersController extends Controller
     public function show($id)
     {
         $users =  User::find($id);
-        return view('compte', ['users' => $users]);
+        return view('comptedetails', ['users' => $users]);
     }
 
     /**
