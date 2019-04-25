@@ -1,7 +1,7 @@
 <nav>
         <a href="./"><img class="logo" src="{{ url('img/logo_gamezone.png') }}" alt="gamezone"></a>
         <ul id="menu">
-            <li><a class="border" href="#">Attractions</a></li>
+            <li><a class="border" href="./attractions">Attractions</a></li>
             <li><a class="border" href="#">Préparer ma visite</a>
                 <ul>
                     <li><a href="#">Se rendre au parc</a></li>
@@ -11,6 +11,7 @@
             </li>
             <li><a class="border" href="#">Plan</a></li>
             <li><a class="game" href="#">My game</a></li>
+
         </ul>
         <ul id="langue">
             <li><a href="#"><img src="{{ url('img/flags/fr.png') }}" alt="Français"></a>

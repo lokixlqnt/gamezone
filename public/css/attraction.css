@@ -1,0 +1,179 @@
+main {
+    margin-top: 80px!important;
+}
+
+header {
+    background-image: url("../img/attractions/vr.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    background-position-y: center;
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.5);
+}
+.attraction {
+    width: 100%;
+    height: auto;
+}
+.sidebar {
+    float: left;
+    height: 50em;
+    width: 30%;
+    text-align: center;
+    padding-top: 2em;
+    box-shadow: 5px 4px 10px rgba(0, 0, 0, 0.5);
+    color: #1C1F3D;
+    line-height: 5em;
+    background-color: #F5F4F4;
+}
+
+.sidebar-content {
+    font-size: 1.2em;
+}
+
+.sidebar img {
+    position: relative;
+    width: 80%;
+    margin: auto;
+
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: #1C1F3D;
+}
+
+.sidebar a:hover {
+    font-weight: bolder;
+}
+
+.sidebar hr {
+    height: 3px;
+    width: 100%;
+    background-color: rgb(201, 17, 106);
+    border: none;
+}
+
+.button {
+    background-color: var(--color-yellow);
+    padding-top: 1em;
+}
+
+.description {
+    float: right;
+    width: 70%;
+    height: 100%;
+    padding-top: 10%;
+    color: var(--color-primary);
+}
+
+.description h2 {
+    text-transform: uppercase;
+    font-size: 2em;
+    margin-left: 10%;
+}
+
+.description hr {
+    background-color: var(--color-yellow);
+    height: 0.5em;
+    width: 90%;
+    margin-left: 0;
+    border: none;
+}
+
+.description p {
+    width: 70%;
+    margin-top: 10%;
+    margin-left: 10%;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    letter-spacing: 0.06em;
+
+}
+
+.end {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.end a {
+    z-index: 100;
+    text-transform: uppercase;
+    color: #881F6A;
+    text-decoration: none;
+}
+
+
+.end a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .description {
+        width: 50%;
+        height: 100%;
+    }
+    .description p {
+        width: 80%;
+        font-size: 1.1em;
+    
+    }
+    .sidebar {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+    .description {
+        width: 50%;
+        height: 100%;
+    }
+    .description p {
+        width: 80%;
+        font-size: 1.1em;
+    
+    }
+    .sidebar {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .sidebar {
+        float: none;
+        width: 100%;
+    }
+
+    .description {
+        float: none;
+        width: 100%;
+        height: auto;
+        padding-top: 0;
+        color: var(--color-primary);
+    }
+    
+    .description h2 {
+        text-transform: uppercase;
+        font-size: 2em;
+        margin-left: 10%;
+    }
+    
+    .description hr {
+        background-color: var(--color-yellow);
+        height: 0.5em;
+        width: 90%;
+        margin-left: 0;
+        border: none;
+    }
+    
+    .description p {
+        width: 80%;
+        margin-top: 10%;
+        margin-left: 10%;
+        font-size: 1em;
+        line-height: 1.2em;
+        letter-spacing: 0.06em;
+    }
+}
