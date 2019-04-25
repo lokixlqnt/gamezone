@@ -19,6 +19,15 @@ Route::get('/compte', 'UsersController@index')->name('compte');
 
 });
 
+Route::get('/events','EventController@index')->name('events.index');
+Route::post('/events', 'EventController@addEvent')->name('events.add');
+
+Route::get('/calendrier','EventController@index')->name('events.index');
+
+Route::get('/plan', function () {
+    return view('plan');
+});
+
 
 Route::get('/', 'HomeController@index')->name('home');
 
