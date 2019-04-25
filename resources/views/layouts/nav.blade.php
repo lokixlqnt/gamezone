@@ -12,6 +12,14 @@
             <li><a class="border" href="#">Plan</a></li>
             <li><a class="game" href="#">My game</a></li>
 
+            @if(Auth::user())
+            <li>
+            <form id="logout-form" action="{{ route('logout') }}" method="POST">
+            <input  type="submit" value="Déconnexion">
+                @csrf
+            </li>
+            @endif
+
 
         </ul>
         <ul id="langue">
@@ -24,9 +32,14 @@
         </ul>
         <div class="avatar">
 
-            <span><a href="{{ route('compte') }}">{{ Auth::user()->nickname}}</a></span>
+            <span><a href="{{ route('compte') }}">
+                @if(Auth::user())
+                {{ Auth::user()->nickname}}</a></span>
+                @endif
                 <a href="{{ route('compte') }}">
             <img src="{{ url('img/avatar_snake.png') }}" alt="Snake">
                 </a>
+
+
         </div>
 </nav>
