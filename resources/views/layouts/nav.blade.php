@@ -12,6 +12,7 @@
             <li><a class="border" href="#">Plan</a></li>
             <li><a class="game" href="#">My game</a></li>
 
+
         </ul>
         <ul id="langue">
             <li><a href="#"><img src="{{ url('img/flags/fr.png') }}" alt="Français"></a>
@@ -22,7 +23,10 @@
         </ul>
         </ul>
         <div class="avatar">
-            <span><a href="{{ route('compte')}}">Mon compte</a></span>
+
+            <span><a href="{{ route('compte') }}">{{ Auth::user()->nickname}}</a></span>
+                <a href="{{ route('compte') }}">
             <img src="{{ url('img/avatar_snake.png') }}" alt="Snake">
+                </a>
         </div>
 </nav>

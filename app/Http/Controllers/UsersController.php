@@ -80,7 +80,7 @@ class UsersController extends Controller
 
     public function index()
         {
-        $users = Users::all();
+        $users = User::all();
         return view ('compte', ['users' => $users]);
         }
 

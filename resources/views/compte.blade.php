@@ -33,7 +33,7 @@
   </div>
 
   <div class="divform">
-    <form method ="POST" action="{{ route('newcompte') }}">  @csrf
+    <form method ="POST" action="">  @csrf
       <h2 class="formtitre">PROFIL</h2>
       <label for="pseudo">Votre Pseudo : {{ Auth::user()->nickname }}</label>
       {{-- <input type="text" name="pseudo" /> --}}
@@ -51,10 +51,6 @@
       <label for="pseudo">Votre ville : {{ Auth::user()->city }}</label>
       {{-- <input type="text" name="ville"/> --}}
       <input type="submit" name="submit" class="submit" value="Modifier" />
-
-
-
-
 
 
 </form>
