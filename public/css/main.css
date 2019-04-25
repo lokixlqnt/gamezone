@@ -121,6 +121,18 @@ header {
     color: white;
 }
 
+#menu input[type=submit] {
+    background-color: var(--color-primary);
+    border: none;
+    text-transform: uppercase;
+    font-size: 1em;
+    font-weight: 700;
+    color: var(--color-yellow);
+    margin-left: 85px;
+}
+#menu input[type=submit]:hover {
+    color: white;
+}
 .border {
     border-right: 1px solid white;
 }
