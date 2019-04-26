@@ -15,8 +15,19 @@
 <div class="sidebar">
     <img src="../{{ $attraction->logo }}">
     <div class="sidebar-content">
-    <a href="https://youtu.be/frqDT4bD-OE">Vidéo&nbsp;</a>
-    <a href="http://www.virtual-games-park.fr/">+ d'infos et photos</a>
+            @php
+
+
+        if (isset( $attraction->video ) ){
+            echo'
+
+
+    <a target="_blank" href="';@endphp {{ $attraction->video }}@php echo'">Vidéo&nbsp;</a>
+    <a target="_blank" href="';@endphp {{ $attraction->infos }}@php echo'">Infos et photos</a>';
+        }
+    @endphp
+
+
     <hr>
     <p>+ XP : {{ $attraction->experience }} XP / partie</p>
     <hr>

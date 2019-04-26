@@ -42,7 +42,7 @@
                 </a>
             </ul>
             <ul id="middle">
-                <a href="./recrute">
+                <a href="{{ route('recrute') }}">
                     <li>On Recrute</li>
                 </a>
                 <a href="contact">

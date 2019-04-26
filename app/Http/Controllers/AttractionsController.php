@@ -65,7 +65,8 @@ class AttractionsController extends Controller
         //
     }
 
-    /**
+    /**$attraction = Attraction::find($id);
+        return view('attraction', ['attraction' => $attraction]);
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request

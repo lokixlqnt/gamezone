@@ -12,6 +12,20 @@
             <li><a class="border" href="#">Plan</a></li>
             <li><a class="game" href="#">My game</a></li>
 
+            @if(Auth::user())
+            <li>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                    <input  type="submit" value="Déconnexion">
+                @csrf
+            </li>
+            @else ()
+            <li>
+                <form id="login-form" action="{{ route('login') }}" method="POST">
+                <input  type="submit" value="Connexion">
+                @csrf
+            </li>
+            @endif
+
 
         </ul>
         <ul id="langue">
@@ -29,5 +43,7 @@
                 <a href="{{ route('compte') }}">
             <img src="{{ url('img/avatar_snake.png') }}" alt="Snake">
                 </a>
+
+
         </div>
 </nav>
