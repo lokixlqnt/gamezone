@@ -1,0 +1,44 @@
+main {
+    padding: 0 10%;
+}
+
+span {
+    color: #F6CD40;
+}
+
+section {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin-bottom: 15%;
+}
+
+.box1 {
+    text-align: center;
+}
+
+.title {
+    font-size: 30px;
+}
+
+.box2 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.box3 {
+    text-align: center;
+}
+
+.boite1 {
+    margin-top: 5%;
+}
+
+.boite1 img {
+    width: 60%;
+    height: auto;
+}

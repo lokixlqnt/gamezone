@@ -34,15 +34,15 @@
 
         <div class="right_footer">
         <ul>
-                <a href="#">
+                <a href="./about">
                     <li>A propos du Parc</li>
                 </a>
-                <a href="#">
+                <a href="./presse">
                     <li>Dans la Presse</li>
                 </a>
             </ul>
             <ul id="middle">
-                <a hphp artisan make:controllerref="#">
+                <a href="./recrute">
                     <li>On Recrute</li>
                 </a>
                 <a href="contact">

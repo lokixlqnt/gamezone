@@ -28,6 +28,17 @@ Route::get('/plan', function () {
     return view('plan');
 });
 
+Route::get('/about', function () {
+    return view('about');
+});
+
+Route::get('/presse', function () {
+    return view('press');
+});
+
+Route::get('/recrute', function () {
+    return view('recrute');
+});
 
 Route::get('/', 'HomeController@index')->name('home');
 
