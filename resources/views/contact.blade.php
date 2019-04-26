@@ -17,19 +17,19 @@
             </div>
 
             <div class="bloc_form">
-                <form action="{{ url('/contact')}}" method="post">
+                <form action="{{ url('/contact')}}"> @csrf
 
                     <div id="form">
                         <span><img src="{{ url ('img/log/icon_utilisateur.png') }}" alt="nom"></span>
-                        <input type="text" class="bloc_champ" placeholder="Nom">
+                        <input type="text" class="bloc_champ" placeholder="Nom" id="nom">
                     </div>
 
                     <div id="form">
-                        <span><img src="{{ url ('img/log/icon_email.png') }}" alt="mail"></span>
-                        <input type="text" class="bloc_champ" placeholder="Email">
+                        <span><img src="{{ url ('img/log/icon_email.png') }}" alt="email"></span>
+                        <input type="text" class="bloc_champ" placeholder="Email" id="email">
                     </div>
                     <div id="form">
-                        <textarea name="texte" rows="8" cols="80" placeholder="Votre message" class="message"></textarea>
+                        <textarea name="texte" rows="8" cols="80" placeholder="Votre message" class="message" id="texte"></textarea>
                     </div>
                     <div class="login">
                         <input type="submit" value="Envoyer">

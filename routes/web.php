@@ -23,9 +23,9 @@ Route::get('/events','EventController@index')->name('events.index');
 Route::post('/events', 'EventController@addEvent')->name('events.add');
 
 Route::get('/calendrier','EventController@index')->name('events.index');
+
 Route::get('contact', 'contactController@create');
 Route::post('contact', 'contactController@store');
-
 
 Route::get('/plan', function () {
     return view('plan');
