@@ -54,7 +54,7 @@
                     <li>Conditions de vente</li>
                 </a>
                 <a href="{{ route('mentionslegales') }}">
-                    <li>Conditions légales</li>
+                    <li>Mentions légales</li>
                 </a>
             </ul>
         </div>

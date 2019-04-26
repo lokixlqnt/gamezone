@@ -208,7 +208,7 @@
     </div>
 
     <div id="button_footer">
-        <button><a href="{{ route('ticket') }}">Tarif et billetterie</a></button>
+        <button class="btn_footer"><a href="{{ route('ticket') }}">Tarif et billetterie</a></button>
     </div>
 
 </main>

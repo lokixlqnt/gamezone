@@ -11,7 +11,7 @@
 <main>
 
     <div class="boite">
-        <p>Se qu'on pense de nous: </p>
+        <p>Ce que l'on pense de nous : </p>
         <p>Lorem ipsum dolor sit amet,<span> consectetur adipisicing elit, sed do eiusmod tempor incididunt</span> ut
             labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
             aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
@@ -22,7 +22,7 @@
     </div>
     <section>
         <div class="boite1">
-            <p>Voici Quelque photo :</p>
+            <p>Voici quelques photos :</p>
 
             <img src="{{ url ('img/run_kart.jpg') }}">
         </div>

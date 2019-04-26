@@ -233,7 +233,7 @@ header {
     margin: 0 0;
 }
 
-#button_footer button {
+#button_footer .btn_footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -242,7 +242,7 @@ header {
     white-space: pre-line;
     border-radius: 75px;
     color: var(--color-primary);
-    padding: 18px 38px;
+    padding: 18px 30px;
     text-transform: uppercase;
     background: var(--color-yellow);
     -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -343,7 +343,7 @@ ul#middle {
         flex-wrap: wrap;
   }
 
-  
+
 .social a img {
     width: 48px;
     height: 48px;
