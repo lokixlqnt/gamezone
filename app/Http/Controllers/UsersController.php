@@ -48,6 +48,7 @@ class UsersController extends Controller
         return view('comptedetails', ['users' => $users]);
     }
 
+
     /**
      * Show the form for editing the specified resource.
      *
@@ -72,9 +73,9 @@ class UsersController extends Controller
      */
     public function update(Request $request, $id)
     {
-       $users = Users::where('id',$id)->firstOrFail();
-       $users->update($request->only(['nickname', 'name', 'firstname', 'city']));
-       return redirect()->back();
+       $users = User::where('id',$id)->firstOrFail();
+       $users->update($request->only(['nickname', 'name', 'firstname', 'city', 'email']));
+
 
 
     }

@@ -47,8 +47,9 @@ Route::get('/recrute', 'RecruteController@index')->name('recrute');
 
 Route::get('/compte', 'UsersController@index')->name('compte');
 Route::get('/comptedetails/{id}', 'UsersController@show')->name('comptedetails');
-Route::get('/compte/{id}/edit', 'UsersController@edit')->name('editUsers');
-Route::post('/compte/{id}/update', 'UsersController@update')->name('updateUsers');
+
+// Route::get('/compte/{id}/edit', 'UsersController@edit')->name('editUsers');
+// Route::post('/compte/{id}/update', 'UsersController@update')->name('updateUsers');
 
 
 // Route::get('/compte/{id}', 'UsersController@show')->name('compte');
