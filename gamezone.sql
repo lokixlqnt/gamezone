@@ -2,10 +2,10 @@
 -- version 4.6.6deb5
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: Apr 25, 2019 at 06:22 PM
--- Server version: 10.1.38-MariaDB-0ubuntu0.18.04.1
--- PHP Version: 7.2.17-0ubuntu0.18.04.1
+-- Client :  localhost:3306
+-- Généré le :  Ven 26 Avril 2019 à 14:05
+-- Version du serveur :  10.1.38-MariaDB-0ubuntu0.18.04.1
+-- Version de PHP :  7.2.15-0ubuntu0.18.04.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,13 +17,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `gamezone`
+-- Base de données :  `gamezone`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `attractions`
+-- Structure de la table `attractions`
 --
 
 CREATE TABLE `attractions` (
@@ -35,28 +35,30 @@ CREATE TABLE `attractions` (
   `description` longtext COLLATE utf8mb4_unicode_ci,
   `classdiv` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
   `created_at` timestamp NULL DEFAULT NULL,
-  `updated_at` timestamp NULL DEFAULT NULL
+  `updated_at` timestamp NULL DEFAULT NULL,
+  `video` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `infos` varchar(255) COLLATE utf8mb4_unicode_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `attractions`
+-- Contenu de la table `attractions`
 --
 
-INSERT INTO `attractions` (`id`, `name`, `logo`, `experience`, `minheight`, `description`, `classdiv`, `created_at`, `updated_at`) VALUES
-(10, 'Super Fighter League', 'img/logo_fighter_league.png', 1000, 'Interdit au moins d’1m10', 'Vous   aimez   les   jeux   de   combat   alors   bienvenue dans ce grand 8 aux couleurs des plus  grands  combattants  de  l’histoire  du  jeu-vidéo : Ryu, Raiden, Akuma, Yoshimitsu, Sub Zero, Scorpion et plus encore vont vous défier	dans	ce	manège	à', 'item item--medium animated zoomIn', NULL, NULL),
-(11, 'Heroes team', 'img/logo_heroes.png', 2500, 'Accessible à tous', 'L’attraction ultime de notre parc, un univers entièrement consacré aux super héros Marvel. Embarquez  dans  une  navette  qui  vous  fera  voyager  dans  l’univers  des  gardiens  de  la  galaxy,  Spider-Man,  Thor,  Iron  Man  et  plus  encore. Une aventure unique dont vous serez le héros durant tout le voyage.', 'item item--large animated zoomIn', NULL, NULL),
-(12, 'Contagion VR', 'img/logo_contagion_vr.png', 1500, 'Interdit au moins d\'1m30', 'Vous dirigez une équipe de soldats en charge de	 découvrir	ce	 qui	 est	 arrivé	  aux	 scientifiques	du laboratoire minier Omega Centuri B.Une fois à bord, vous apprenez qu’un terrible virus a fait muter tout l’équipage, et que la station spatiale est maintenant infestée par d’horribles zombies !Vous devez donc évacuer votre équipe en tentant de survivre le plus longtemps possible.', 'item item--long animated zoomIn', NULL, NULL),
-(13, 'Fighter Hard Team', 'img/logo_fighter_hard.png', 1000, 'Interdit au moins d’1m30', 'Dans ce jeu, il n’y a plus de règle. Vous êtes équipé de la dernière armure sensitive et vous  ressentirez  tous  les  coups  que  vos  adversaires  vont  vous  porter.  Attention  donc à ne pas prendre de mauvais coups. Une attraction déconseillée aux femmes enceintes.', 'item item--medium animated zoomIn', NULL, NULL),
-(14, 'Battle Kart', 'img/logo_battle_kart.png', 1000, 'Accessible à tous', 'BattleKart, c’est la quintessence du jeu vidéo, de la réalité augmentée et du karting électrique, ré-unis  pour  vous  procurer  des  sensations  inédites  entre amis, en familles ou entre collègues ! C’est avant tout l’un des plus grands écrans de cinéma au	 monde	   (deux	   pistes	   de	 2.000	   m2)		  sur	 lequel	   nous	  projetons	différents	circuits	   et	 modes	   de	 jeu,	et sur lequel vous évoluez réellement plein gaz à bord d’un kart électrique, tout en interagissant avec le décor, les bonus, et les autres pilotes.', 'item item--medium animated zoomIn', NULL, NULL),
-(15, 'GAME CENTER', 'img/logo_game_center.png', 500, 'Accessible à tous', 'Un espace de 3000 m2 dédié au Retro Gaming. Vous retrouverez  toute  l’ambiance  des  salles  d’arcade  des  années	   80	 avec	  les	 bornes	   de	 l’époque	pour	  défier	   vos	amis dans les meilleurs jeux retro : Mario, Centipede, Q Bert, Space invaders, Pac-Man...', 'item item--long animated zoomIn', NULL, NULL),
-(16, 'Awsome heroes team', 'img/logo_awesome_heroes.png', 1200, 'Interdit au moins d\'1m30', 'une plongée épique dans l’univers des vikings et des chevaliers. Vous retrouverez l’ambiance du célèbre jeu  For  Honor  du  studio  français  Ubisoft.  Une  attraction  riche  en  sensations  fortes  déconseillée  aux âmes sensibles.', 'item item--medium animated zoomIn', NULL, NULL),
-(17, 'Champions League', 'img/logo_champions_league.png', 1300, 'Accessible à tous', 'Dans	  ce	 jeu	 vous	  bénéficiez	de	 la	 toute	  dernière	technologie	hologramme	pour	   affronter	les	légendes du football en partenariat avec Konami et	 la	 licence	   de	 simulation	de	 football	   PES.	  Venez	   affronter	sur	 le	 terrain	   Maradona,	Pelé, Messi et bien d\'autres', 'item item--medium animated zoomIn', NULL, NULL),
-(18, 'Champions League Survivor', 'img/logo_champions_league_survivor.png', 1400, 'Interdit au moins d’1m10', 'Dans   cette   version   alternative   du   jeu   Champions  League,  les  joueurs  de  foot  sont remplacès par des vampires, des loups garous et des zombies. Vous devrez donc marquer des buts sans vous faire dévorer par d’horribles créatures.', 'item item--medium animated zoomIn', NULL, NULL);
+INSERT INTO `attractions` (`id`, `name`, `logo`, `experience`, `minheight`, `description`, `classdiv`, `created_at`, `updated_at`, `video`, `infos`) VALUES
+(10, 'Super Fighter League', 'img/logo_fighter_league.png', 1000, 'Interdit au moins d’1m10', 'Vous   aimez   les   jeux   de   combat   alors   bienvenue dans ce grand 8 aux couleurs des plus  grands  combattants  de  l’histoire  du  jeu-vidéo : Ryu, Raiden, Akuma, Yoshimitsu, Sub Zero, Scorpion et plus encore vont vous défier	dans	ce	manège	à', 'item item--medium animated zoomIn', NULL, NULL, NULL, NULL),
+(11, 'Heroes team', 'img/logo_heroes.png', 2500, 'Accessible à tous', 'L’attraction ultime de notre parc, un univers entièrement consacré aux super héros Marvel. Embarquez  dans  une  navette  qui  vous  fera  voyager  dans  l’univers  des  gardiens  de  la  galaxy,  Spider-Man,  Thor,  Iron  Man  et  plus  encore. Une aventure unique dont vous serez le héros durant tout le voyage.', 'item item--large animated zoomIn', NULL, NULL, NULL, NULL),
+(12, 'Contagion VR', 'img/logo_contagion_vr.png', 1500, 'Interdit au moins d\'1m30', 'Vous dirigez une équipe de soldats en charge de	 découvrir	ce	 qui	 est	 arrivé	  aux	 scientifiques	du laboratoire minier Omega Centuri B.Une fois à bord, vous apprenez qu’un terrible virus a fait muter tout l’équipage, et que la station spatiale est maintenant infestée par d’horribles zombies !Vous devez donc évacuer votre équipe en tentant de survivre le plus longtemps possible.', 'item item--long animated zoomIn', NULL, NULL, 'https://youtu.be/frqDT4bD-OE', 'http://www.virtual-games-park.fr/'),
+(13, 'Fighter Hard Team', 'img/logo_fighter_hard.png', 1000, 'Interdit au moins d’1m30', 'Dans ce jeu, il n’y a plus de règle. Vous êtes équipé de la dernière armure sensitive et vous  ressentirez  tous  les  coups  que  vos  adversaires  vont  vous  porter.  Attention  donc à ne pas prendre de mauvais coups. Une attraction déconseillée aux femmes enceintes.', 'item item--medium animated zoomIn', NULL, NULL, NULL, NULL),
+(14, 'Battle Kart', 'img/logo_battle_kart.png', 1000, 'Accessible à tous', 'BattleKart, c’est la quintessence du jeu vidéo, de la réalité augmentée et du karting électrique, ré-unis  pour  vous  procurer  des  sensations  inédites  entre amis, en familles ou entre collègues ! C’est avant tout l’un des plus grands écrans de cinéma au	 monde	   (deux	   pistes	   de	 2.000	   m2)		  sur	 lequel	   nous	  projetons	différents	circuits	   et	 modes	   de	 jeu,	et sur lequel vous évoluez réellement plein gaz à bord d’un kart électrique, tout en interagissant avec le décor, les bonus, et les autres pilotes.', 'item item--medium animated zoomIn', NULL, NULL, 'https://youtu.be/Ty8ycqgbax0', 'https://www.battlekart.eu/fr/accueil'),
+(15, 'GAME CENTER', 'img/logo_game_center.png', 500, 'Accessible à tous', 'Un espace de 3000 m2 dédié au Retro Gaming. Vous retrouverez  toute  l’ambiance  des  salles  d’arcade  des  années	   80	 avec	  les	 bornes	   de	 l’époque	pour	  défier	   vos	amis dans les meilleurs jeux retro : Mario, Centipede, Q Bert, Space invaders, Pac-Man...', 'item item--long animated zoomIn', NULL, NULL, NULL, NULL),
+(16, 'Awsome heroes team', 'img/logo_awesome_heroes.png', 1200, 'Interdit au moins d\'1m30', 'une plongée épique dans l’univers des vikings et des chevaliers. Vous retrouverez l’ambiance du célèbre jeu  For  Honor  du  studio  français  Ubisoft.  Une  attraction  riche  en  sensations  fortes  déconseillée  aux âmes sensibles.', 'item item--medium animated zoomIn', NULL, NULL, NULL, NULL),
+(17, 'Champions League', 'img/logo_champions_league.png', 1300, 'Accessible à tous', 'Dans	  ce	 jeu	 vous	  bénéficiez	de	 la	 toute	  dernière	technologie	hologramme	pour	   affronter	les	légendes du football en partenariat avec Konami et	 la	 licence	   de	 simulation	de	 football	   PES.	  Venez	   affronter	sur	 le	 terrain	   Maradona,	Pelé, Messi et bien d\'autres', 'item item--medium animated zoomIn', NULL, NULL, NULL, NULL),
+(18, 'Champions League Survivor', 'img/logo_champions_league_survivor.png', 1400, 'Interdit au moins d’1m10', 'Dans   cette   version   alternative   du   jeu   Champions  League,  les  joueurs  de  foot  sont remplacès par des vampires, des loups garous et des zombies. Vous devrez donc marquer des buts sans vous faire dévorer par d’horribles créatures.', 'item item--medium animated zoomIn', NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `avatars`
+-- Structure de la table `avatars`
 --
 
 CREATE TABLE `avatars` (
@@ -66,7 +68,7 @@ CREATE TABLE `avatars` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `avatars`
+-- Contenu de la table `avatars`
 --
 
 INSERT INTO `avatars` (`id`, `name`, `image`) VALUES
@@ -75,7 +77,7 @@ INSERT INTO `avatars` (`id`, `name`, `image`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `events`
+-- Structure de la table `events`
 --
 
 CREATE TABLE `events` (
@@ -88,7 +90,7 @@ CREATE TABLE `events` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `events`
+-- Contenu de la table `events`
 --
 
 INSERT INTO `events` (`id`, `created_at`, `updated_at`, `event_name`, `start_date`, `end_date`) VALUES
@@ -97,7 +99,7 @@ INSERT INTO `events` (`id`, `created_at`, `updated_at`, `event_name`, `start_dat
 -- --------------------------------------------------------
 
 --
--- Table structure for table `migrations`
+-- Structure de la table `migrations`
 --
 
 CREATE TABLE `migrations` (
@@ -107,7 +109,7 @@ CREATE TABLE `migrations` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `migrations`
+-- Contenu de la table `migrations`
 --
 
 INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
@@ -121,7 +123,7 @@ INSERT INTO `migrations` (`id`, `migration`, `batch`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `password_resets`
+-- Structure de la table `password_resets`
 --
 
 CREATE TABLE `password_resets` (
@@ -132,7 +134,7 @@ CREATE TABLE `password_resets` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `roles`
+-- Structure de la table `roles`
 --
 
 CREATE TABLE `roles` (
@@ -143,7 +145,7 @@ CREATE TABLE `roles` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `users`
+-- Structure de la table `users`
 --
 
 CREATE TABLE `users` (
@@ -163,12 +165,12 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
--- Dumping data for table `users`
+-- Contenu de la table `users`
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `firstname`, `nickname`, `city`, `avatar_id`, `experience`) VALUES
 (1, 'AUDREY', 'auda59@hotmail.fr', NULL, '$2y$10$M4ddGoR7GVvzpJZTNLTpQuOQahqBZt6J4qMCIlIypMKmHY9IWhP6O', NULL, '2019-04-21 17:44:58', '2019-04-21 17:44:58', 'AUDREY', 'YAUDA', 'VALENCIENNES', 1, 0),
-(2, 'BERNEZET', 'alex@alex.fr', NULL, '$2y$10$vC3gCHYlhqCgM6465aK7p./g.18l20Zj3HNSmZxrLI5aMx2D9aWiG', NULL, '2019-04-22 21:21:33', '2019-04-22 21:21:33', NULL, 'ALEX', 'DUNKERQUE', 1, 0),
+(2, 'BERNEZET', 'alex@alex.fr', NULL, '$2y$10$vC3gCHYlhqCgM6465aK7p./g.18l20Zj3HNSmZxrLI5aMx2D9aWiG', NULL, '2019-04-22 21:21:33', '2019-04-22 21:21:33', 'blabla', 'ALEX', 'DUNKERQUE', 1, 0),
 (3, 'audrey', 'audrey@hotmail.fr', NULL, '$2y$10$IWxApbwzC1LturuFWqb5Ce2P3.ytDi7PkIS1UYFkk9CX1krrhcX9K', NULL, '2019-04-24 16:08:11', '2019-04-24 16:08:11', 'audrey', 'audrey', 'audrey', 1, 0),
 (4, 'grbr', 'q@hotmail.fr', NULL, '$2y$10$hOSyhwQEiJ3cvDwtT7dgkezyNG0niVsu1GCd7JGhVU4t3MviiZ85S', NULL, '2019-04-24 16:13:11', '2019-04-24 16:13:11', 'dd', 'd', 'kj', 1, 0),
 (5, 'dve', 'fdbved@br.fr', NULL, '$2y$10$gzs0GOcAzPgFSoUOWfvo/OcI8fqir7mXW2IJsfjvDRs8jtj74w4Bi', NULL, '2019-04-24 16:17:08', '2019-04-24 16:17:08', 've', 've', 'efegr', 1, 0),
@@ -176,86 +178,86 @@ INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `re
 (7, 'world', 'world@hotmail.fr', NULL, '$2y$10$1qulZ2iudxtEfxcDbMZm7ODcO.YxXNsjDUXMw8hTwdZqijPEhTrmi', NULL, '2019-04-25 10:13:39', '2019-04-25 10:13:39', 'world', 'world', 'world', 1, 0);
 
 --
--- Indexes for dumped tables
+-- Index pour les tables exportées
 --
 
 --
--- Indexes for table `attractions`
+-- Index pour la table `attractions`
 --
 ALTER TABLE `attractions`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `avatars`
+-- Index pour la table `avatars`
 --
 ALTER TABLE `avatars`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `events`
+-- Index pour la table `events`
 --
 ALTER TABLE `events`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `migrations`
+-- Index pour la table `migrations`
 --
 ALTER TABLE `migrations`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `roles`
+-- Index pour la table `roles`
 --
 ALTER TABLE `roles`
   ADD PRIMARY KEY (`id`);
 
 --
--- Indexes for table `users`
+-- Index pour la table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
   ADD KEY `users_avatar_id_foreign` (`avatar_id`);
 
 --
--- AUTO_INCREMENT for dumped tables
+-- AUTO_INCREMENT pour les tables exportées
 --
 
 --
--- AUTO_INCREMENT for table `attractions`
+-- AUTO_INCREMENT pour la table `attractions`
 --
 ALTER TABLE `attractions`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 --
--- AUTO_INCREMENT for table `avatars`
+-- AUTO_INCREMENT pour la table `avatars`
 --
 ALTER TABLE `avatars`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT for table `events`
+-- AUTO_INCREMENT pour la table `events`
 --
 ALTER TABLE `events`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
--- AUTO_INCREMENT for table `migrations`
+-- AUTO_INCREMENT pour la table `migrations`
 --
 ALTER TABLE `migrations`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 --
--- AUTO_INCREMENT for table `roles`
+-- AUTO_INCREMENT pour la table `roles`
 --
 ALTER TABLE `roles`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT;
 --
--- AUTO_INCREMENT for table `users`
+-- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
   MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 --
--- Constraints for dumped tables
+-- Contraintes pour les tables exportées
 --
 
 --
--- Constraints for table `users`
+-- Contraintes pour la table `users`
 --
 ALTER TABLE `users`
   ADD CONSTRAINT `users_avatar_id_foreign` FOREIGN KEY (`avatar_id`) REFERENCES `avatars` (`id`);
