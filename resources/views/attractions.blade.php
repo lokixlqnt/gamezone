@@ -14,6 +14,11 @@
     <div class="message">
         Sorry, your browser does not support CSS Grid. 😅
     </div>
+
+    <div class="head_text animated fadeInDown">
+        <p>Découvrez nos attractions et cumulez vos points grâce à notre système d'xp<p>
+    </div>
+    
     <section class="section">
 
         <div class="grid">
