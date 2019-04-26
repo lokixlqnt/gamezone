@@ -37,19 +37,19 @@
 
                         <li><span class="input-name">Nom : </span>
                             <span class="input-user-info"> {{ Auth::user()->firstname }}</span>
-                                <a class="edit" href="{{ route('comptedetails', ['id' =>$users->id])}}">
+                                {{-- <a class="edit" href="{{ route('comptedetails')}}"> --}}
                                 <img src="./img/iconfinder_15.Pencil_290135.svg"></a></li>
                         <li><span class="input-name">Prénom : </span>
                             <span class="input-user-info"> {{ Auth::user()->name }}</span>
-                                <a class="edit" href="{{ route('comptedetails', ['id' =>$users->id])}}">
+                                {{-- <a class="edit" href="{{ route('comptedetails')}}"> --}}
                                 <img src="./img/iconfinder_15.Pencil_290135.svg"></a></li>
                         <li><span class="input-name">Ville : </span>
                             <span class="input-user-info"> {{ Auth::user()->city }}</span>
-                                <a class="edit" href="{{ route('comptedetails', ['id' =>$users->id])}}">
+                                {{-- <a class="edit" href="{{ route('comptedetails')}}"> --}}
                                 <img src="./img/iconfinder_15.Pencil_290135.svg"></a></li>
                         <li><span class="input-name">Email : </span>
                             <span class="input-user-info"> {{ Auth::user()->email }}</span>
-                                <a class="edit" href="{{ route('comptedetails', ['id' =>$users->id])}}">
+                                {{-- <a class="edit" href="{{ route('comptedetails')}}"> --}}
                                 <img src="./img/iconfinder_15.Pencil_290135.svg"></a></li>
                     </ul>
                 </div>

@@ -46,7 +46,15 @@ Route::get('/attraction/{id}', 'AttractionsController@show')->name('attraction')
 Route::get('/recrute', 'RecruteController@index')->name('recrute');
 
 Route::get('/compte', 'UsersController@index')->name('compte');
-Route::get('/comptedetails/{id}', 'UsersController@show')->name('comptedetails');
+
+
+
+// Route::get('/comptedetails', function () {
+//     return view('comptedetails');
+// });
+
+
+// Route::get('/comptedetails', 'UsersController@show')->name('comptedetails');
 
 // Route::get('/compte/{id}/edit', 'UsersController@edit')->name('editUsers');
 // Route::post('/compte/{id}/update', 'UsersController@update')->name('updateUsers');
@@ -69,12 +77,6 @@ Route::get('/comptedetails/{id}', 'UsersController@show')->name('comptedetails')
 
 
 // Route::post('/compte/', 'UsersController@update')->name('updateusers');
-
-
-
-// Route::get('/comptedetails', function () {
-//     return view('comptedetails');
-// });
 
 
 

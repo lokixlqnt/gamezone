@@ -42,11 +42,11 @@ class UsersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
-    {
-        $users =  User::find($id);
-        return view('comptedetails', ['users' => $users]);
-    }
+    // public function show($id)
+    // {
+    //     $users =  User::find($id);
+    //     return view('comptedetails', ['users' => $users]);
+    // }
 
 
     /**
