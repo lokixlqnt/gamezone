@@ -4,9 +4,9 @@
             <li><a class="border" href="{{ route('attractions') }}">Attractions</a></li>
             <li><a class="border" href="#">Préparer ma visite</a>
                 <ul>
-                    <li><a href="#">Se rendre au parc</a></li>
+                    {{-- <li><a href="#">Se rendre au parc</a></li> --}}
                     <li><a href="{{ route('ticket') }}">Tarif et billetterie</a></li>
-                    <li><a href="#">Horaires & calendrier</a></li>
+                    <li><a href="{{ route('events') }}">Horaires & calendrier</a></li>
                 </ul>
             </li>
             <li><a class="border" href="#">Plan</a></li>

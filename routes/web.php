@@ -61,6 +61,10 @@ Route::get('/recrute', 'RecruteController@index')->name('recrute');
 
 Route::get('/compte', 'UsersController@index')->name('compte');
 
+Route::get('/compte', 'UsersController@index')->name('compte');
+
+Route::get('events', 'EventController@index')->name('events');
+
 
 
 // Route::get('/comptedetails', function () {
