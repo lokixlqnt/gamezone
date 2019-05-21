@@ -88,7 +88,7 @@ class AttractionsController extends Controller
     }
 
 
-      // API
+      // ----- --API-- -----
 
       public function apiIndex()
       {
