@@ -19,8 +19,6 @@ class AttractionsController extends Controller
     }
 
 
-
-
     /**
      * Show the form for creating a new resource.
      *
@@ -88,4 +86,42 @@ class AttractionsController extends Controller
     {
         //
     }
+
+
+      // API
+
+      public function apiIndex()
+      {
+          $attractions = Attraction::all();
+          return response()->json($attractions);
+      }
+
+      public function apiShow($id)
+      {
+          $attraction = Attraction::find($id);
+          return response()->json($attraction);
+      }
+
+      public function apiStore (Request $request)
+      {
+          $attraction = Attraction::find($id);
+          $attraction->save();
+      }
+
+      public function apiDestroy($id)
+      {
+          $attraction = Attraction::find($id);
+          $attraction->delete();
+          return response()->json($attraction);
+
+      }
+
+      public function apiUpdate($id, Request $request)
+      {
+          $attraction = Attraction::find($id);
+          $input = $request->all();
+          $attraction->fill($input)->save();
+          return response()->json($attraction);
+      }
+
 }
