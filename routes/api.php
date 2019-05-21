@@ -28,6 +28,7 @@ Route::group(['prefix' => '1.0'], function() {
     Route::delete('attraction/{id}', 'AttractionsController@apiDestroy');
 
     Route::post('editattraction/{id]', 'AttractionsController@apiUpdate');
-})
+
+});
 
 
